@@ -5,6 +5,9 @@ hero:
   name: CARTIO
   text: AGÊNCIA DE PADRONIZAÇÃO
   tagline: Regulando e governando a interoperabilidade de identidades e infraestrutura lógica para teatros de operações críticas e resposta a desastres.
+  image:
+    src: /cartio_hero_network.png
+    alt: CARTIO Tactical Data Network Overview
   actions:
     - theme: brand
       text: Entrar na Agência

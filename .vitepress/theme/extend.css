@@ -1,35 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
 :root {
-    --vp-button-brand-border: #2B7574;
-    --vp-button-brand-text: #ffffff;
-    --vp-button-brand-bg: #2B7574;
-    --vp-button-brand-hover-border: #2B7574;
-    --vp-button-brand-hover-text: #ffffff;
-    --vp-button-brand-hover-bg: #3c9291;
-    --vp-button-brand-active-border: #2B7574;
-    --vp-button-brand-active-text: #2c3e50;
-    --vp-button-brand-active-bg: #2B7574;
-    --vp-home-hero-name-color: #2B7574;
-    --vp-home-hero-image-filter: blur(40px);
-}
+  /* Paleta de Cores Tática Futurista */
+  --vp-c-brand: #2B7574;
+  --vp-c-brand-1: #2B7574;
+  --vp-c-brand-2: #861211;
+  --vp-c-brand-3: #1a4d4b;
   
-.VPHero .VPImage.image-src {
-    max-height: 192px;
-}
+  /* Botões e Ações */
+  --vp-button-brand-border: #2B7574;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #2B7574;
+  --vp-button-brand-hover-border: #861211;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #861211;
+  --vp-button-brand-active-border: #2B7574;
+  --vp-button-brand-active-bg: #2B7574;
   
-@media (min-width: 640px) {
-    :root {
-        --vp-home-hero-image-filter: blur(56px);
-    }
-    .VPHero .VPImage.image-src {
-        max-height: 256px;
-    }
-}
+  /* Tipografia Customizada de Alta Costura */
+  --vp-font-family-base: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   
-@media (min-width: 960px) {
-    :root {
-        --vp-home-hero-image-filter: blur(72px);
-    }
-    .VPHero .VPImage.image-src {
-        max-height: 320px;
-    }
+  /* Deep Dark Mode Overrides (Modo Escuro Militar/Operacional) */
+  --vp-c-bg: #070b0d;
+  --vp-c-bg-soft: rgba(14, 25, 30, 0.5);
+  --vp-c-bg-mute: #111a1f;
+  --vp-c-divider: rgba(43, 117, 116, 0.2);
+  --vp-c-text-1: #f3f4f6;
+  --vp-c-text-2: #9ca3af;
+}
+
+/* --- Hero Section Arrojado --- */
+.VPHero {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.VPHero .name {
+  background: linear-gradient(135deg, #53bfd2 0%, #2B7574 50%, #861211 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 5px;
+  filter: drop-shadow(0 0 15px rgba(43, 117, 116, 0.25));
+}
+
+.VPHero .text {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e5e7eb;
+}
+
+.VPHero .tagline {
+  font-weight: 300;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* Efeito Flutuante e Brilho Neon na Imagem Hero */
+.VPHero .VPImage {
+  filter: drop-shadow(0 0 40px rgba(43, 117, 116, 0.45)) !important;
+  animation: floatHero 6s ease-in-out infinite;
+}
+
+@keyframes floatHero {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* --- Grid de Recursos (VPFeatures) --- */
+.VPFeatures .VPFeature {
+  background: rgba(14, 25, 30, 0.4) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(43, 117, 116, 0.15) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.VPFeatures .VPFeature:hover {
+  border-color: rgba(43, 117, 116, 0.5) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(43, 117, 116, 0.2), 0 0 15px rgba(43, 117, 116, 0.1);
+}
+
+/* --- Cards Customizados do Portal --- */
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  margin-top: 2rem;
+}
+
+.portal-card {
+  background: rgba(17, 26, 31, 0.4) !important;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(43, 117, 116, 0.15) !important;
+  border-radius: 14px !important;
+  padding: 32px 28px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Detalhe Superior de Borda com Degradê */
+.portal-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #2B7574, #861211);
+  opacity: 0.8;
+}
+
+.portal-card:hover {
+  transform: translateY(-10px) scale(1.015);
+  border-color: rgba(43, 117, 116, 0.6) !important;
+  box-shadow: 0 15px 45px rgba(43, 117, 116, 0.3), 0 0 25px rgba(43, 117, 116, 0.15);
+}
+
+.card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #53bfd2;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.portal-card h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.portal-card p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.card-link {
+  font-weight: 700;
+  color: #53bfd2;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.portal-card:hover .card-link {
+  transform: translateX(5px);
+  color: #2B7574;
+}
+
+/* --- Painel de Métricas Táticas --- */
+.metrics-section {
+  background: linear-gradient(135deg, rgba(14, 25, 30, 0.7) 0%, rgba(7, 11, 13, 0.9) 100%) !important;
+  border-left: 6px solid #2B7574 !important;
+  border-top: 1px solid rgba(43, 117, 116, 0.2) !important;
+  border-right: 1px solid rgba(43, 117, 116, 0.2) !important;
+  border-bottom: 1px solid rgba(43, 117, 116, 0.2) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  padding: 36px 30px !important;
+}
+
+.metric-val {
+  font-size: 3.2rem !important;
+  font-weight: 800 !important;
+  background: linear-gradient(135deg, #53bfd2, #2B7574);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.metric-lbl {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.metric-item p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.portal-divider {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(43, 117, 116, 0.4), transparent);
+  margin: 4rem 0;
 }

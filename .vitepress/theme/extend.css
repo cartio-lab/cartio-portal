@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
-  /* Paleta de Cores Tática Futurista */
+  /* Paleta de Cores Tática / Científica */
   --vp-c-brand: #2B7574;
   --vp-c-brand-1: #2B7574;
   --vp-c-brand-2: #861211;
@@ -21,13 +21,45 @@
   --vp-font-family-base: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --vp-font-family-mono: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   
-  /* Deep Dark Mode Overrides (Modo Escuro Militar/Operacional) */
+  /* Light Mode Theme Variables (Sóbrio, Científico, Papel Acadêmico) */
+  --vp-c-bg: #f8fafc;
+  --vp-c-bg-soft: #ffffff;
+  --vp-c-bg-mute: #f1f5f9;
+  --vp-c-divider: rgba(43, 117, 116, 0.15);
+  --vp-c-text-1: #0f172a;
+  --vp-c-text-2: #475569;
+  --vp-c-text-3: #64748b;
+  
+  /* Cores customizadas dos cards/layout (Light Mode) */
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(43, 117, 116, 0.15);
+  --card-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  --card-title-color: #0f172a;
+  --card-tag-color: #2b7574;
+  --hero-text-color: #334155;
+  --hero-glow: rgba(43, 117, 116, 0.15);
+  --history-section-bg: rgba(43, 117, 116, 0.04);
+}
+
+.dark {
+  /* Dark Mode Theme Variables (Modo Escuro Militar/Operacional) */
   --vp-c-bg: #070b0d;
   --vp-c-bg-soft: rgba(14, 25, 30, 0.5);
   --vp-c-bg-mute: #111a1f;
   --vp-c-divider: rgba(43, 117, 116, 0.2);
   --vp-c-text-1: #f3f4f6;
   --vp-c-text-2: #9ca3af;
+  --vp-c-text-3: #6b7280;
+  
+  /* Cores customizadas dos cards/layout (Dark Mode) */
+  --card-bg: rgba(17, 26, 31, 0.4);
+  --card-border: rgba(43, 117, 116, 0.15);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --card-title-color: #ffffff;
+  --card-tag-color: #53bfd2;
+  --hero-text-color: #e5e7eb;
+  --hero-glow: rgba(43, 117, 116, 0.45);
+  --history-section-bg: rgba(43, 117, 116, 0.03);
 }
 
 /* --- Hero Section Arrojado --- */
@@ -48,7 +80,7 @@
 .VPHero .text {
   font-weight: 700;
   letter-spacing: 1px;
-  color: #e5e7eb;
+  color: var(--hero-text-color);
 }
 
 .VPHero .tagline {
@@ -59,7 +91,7 @@
 
 /* Efeito Flutuante e Brilho Neon na Imagem Hero */
 .VPHero .VPImage {
-  filter: drop-shadow(0 0 40px rgba(43, 117, 116, 0.45)) !important;
+  filter: drop-shadow(0 0 40px var(--hero-glow)) !important;
   animation: floatHero 6s ease-in-out infinite;
 }
 
@@ -71,17 +103,17 @@
 
 /* --- Grid de Recursos (VPFeatures) --- */
 .VPFeatures .VPFeature {
-  background: rgba(14, 25, 30, 0.4) !important;
+  background: var(--card-bg) !important;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(43, 117, 116, 0.15) !important;
+  border: 1px solid var(--card-border) !important;
   border-radius: 12px !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 }
 
 .VPFeatures .VPFeature:hover {
-  border-color: rgba(43, 117, 116, 0.5) !important;
+  border-color: var(--vp-c-brand) !important;
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(43, 117, 116, 0.2), 0 0 15px rgba(43, 117, 116, 0.1);
+  box-shadow: 0 10px 25px rgba(43, 117, 116, 0.15);
 }
 
 /* --- Cards Customizados do Portal --- */
@@ -93,12 +125,12 @@
 }
 
 .portal-card {
-  background: rgba(17, 26, 31, 0.4) !important;
+  background: var(--card-bg) !important;
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(43, 117, 116, 0.15) !important;
+  border: 1px solid var(--card-border) !important;
   border-radius: 14px !important;
   padding: 32px 28px !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--card-shadow);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
   position: relative;
   overflow: hidden;
@@ -126,7 +158,7 @@
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #53bfd2;
+  color: var(--card-tag-color);
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -136,7 +168,7 @@
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 12px;
-  color: #ffffff;
+  color: var(--card-title-color);
 }
 
 .portal-card p {
@@ -148,7 +180,7 @@
 
 .card-link {
   font-weight: 700;
-  color: #53bfd2;
+  color: var(--card-tag-color);
   text-decoration: none;
   font-size: 0.95rem;
   display: inline-block;
@@ -157,18 +189,18 @@
 
 .portal-card:hover .card-link {
   transform: translateX(5px);
-  color: #2B7574;
+  color: var(--vp-c-brand);
 }
 
 /* --- Painel de Métricas Táticas --- */
 .metrics-section {
-  background: linear-gradient(135deg, rgba(14, 25, 30, 0.7) 0%, rgba(7, 11, 13, 0.9) 100%) !important;
-  border-left: 6px solid #2B7574 !important;
-  border-top: 1px solid rgba(43, 117, 116, 0.2) !important;
-  border-right: 1px solid rgba(43, 117, 116, 0.2) !important;
-  border-bottom: 1px solid rgba(43, 117, 116, 0.2) !important;
+  background: var(--card-bg) !important;
+  border-left: 6px solid var(--vp-c-brand) !important;
+  border-top: 1px solid var(--card-border) !important;
+  border-right: 1px solid var(--card-border) !important;
+  border-bottom: 1px solid var(--card-border) !important;
   border-radius: 12px !important;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--card-shadow);
   padding: 36px 30px !important;
 }
 
@@ -187,7 +219,7 @@
   font-size: 1.1rem;
   margin-top: 8px;
   margin-bottom: 8px;
-  color: #ffffff;
+  color: var(--card-title-color);
 }
 
 .metric-item p {

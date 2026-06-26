@@ -20,13 +20,19 @@ hero:
       link: /schema/cartio-schema-ldif
 
 features:
-  - icon: 🌍
+  - icon:
+      light: /icons/globe-light.svg
+      dark: /icons/globe-dark.svg
     title: Proposta de Interoperabilidade
     details: Estrutura semântica para operações conjuntas de Dia Zero, alinhada às premissas do conceito NATO Federated Mission Networking (FMN).
-  - icon: 🛡️
+  - icon:
+      light: /icons/shield-light.svg
+      dark: /icons/shield-dark.svg
     title: Engenharia de Sobrevivência
     details: Persistência mapeada em memória local (LMDB) e sincronização oportunista para sobrevivência operacional sob perda de sinal.
-  - icon: ⚖️
+  - icon:
+      light: /icons/scales-light.svg
+      dark: /icons/scales-dark.svg
     title: Alinhamento Humanitário
     details: Modelagem projetada sob as Convenções de Genebra e diretrizes de proteção de dados sensíveis da ONU/OCHA em crises.
 ---

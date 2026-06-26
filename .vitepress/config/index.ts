@@ -354,9 +354,43 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
-        translations: {
-          button: { buttonText: 'Buscar no projeto...', buttonAriaLabel: 'Buscar' },
-          modal: { noResultsText: 'Nenhum resultado encontrado', resetButtonTitle: 'Limpar busca' }
+        locales: {
+          root: {
+            translations: {
+              button: { buttonText: 'Buscar no projeto...', buttonAriaLabel: 'Buscar' },
+              modal: { noResultsText: 'Nenhum resultado encontrado', resetButtonTitle: 'Limpar busca' }
+            }
+          },
+          en: {
+            translations: {
+              button: { buttonText: 'Search the project...', buttonAriaLabel: 'Search' },
+              modal: { noResultsText: 'No results found', resetButtonTitle: 'Clear search' }
+            }
+          },
+          es: {
+            translations: {
+              button: { buttonText: 'Buscar en el proyecto...', buttonAriaLabel: 'Buscar' },
+              modal: { noResultsText: 'No se encontraron resultados', resetButtonTitle: 'Limpiar búsqueda' }
+            }
+          },
+          it: {
+            translations: {
+              button: { buttonText: 'Cerca nel progetto...', buttonAriaLabel: 'Cerca' },
+              modal: { noResultsText: 'Nessun risultato trovato', resetButtonTitle: 'Azzera ricerca' }
+            }
+          },
+          fr: {
+            translations: {
+              button: { buttonText: 'Rechercher dans le projet...', buttonAriaLabel: 'Rechercher' },
+              modal: { noResultsText: 'Aucun résultat trouvé', resetButtonTitle: 'Réinitialiser la recherche' }
+            }
+          },
+          de: {
+            translations: {
+              button: { buttonText: 'Projekt durchsuchen...', buttonAriaLabel: 'Suchen' },
+              modal: { noResultsText: 'Keine Ergebnisse gefunden', resetButtonTitle: 'Suche zurücksetzen' }
+            }
+          }
         }
       }
     },

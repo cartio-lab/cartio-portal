@@ -1,6 +1,6 @@
-# Árvore de Informações do Diretório (DIT CARTIO)
+# Arbre d'Information de l'Annuaire (DIT CARTIO)
 
-A Árvore de Diretório (**DIT** — *Directory Information Tree*) define a estrutura organizacional de nomes para evitar colisões no namespace em operações de federação:
+L'Arbre d'Information de l'Annuaire (**DIT** — *Directory Information Tree*) définit la structure organisationnelle des noms pour éviter les collisions dans l'espace de noms (namespace) lors des opérations de fédération :
 
 ```
                   dc=cartio,dc=org
@@ -10,8 +10,8 @@ A Árvore de Diretório (**DIT** — *Directory Information Tree*) define a estr
    uid=militar1   uid=militar2   o=HospitalCentral
 ```
 
-### Arquivo LDIF Base de Inicialização
-Para criar as Unidades Organizacionais (OUs) iniciais no diretório, utiliza-se a estrutura padrão:
+### Fichier LDIF de Base pour l'Initialisation
+Pour créer les Unités Organisationnelles (OUs) initiales dans l'annuaire, la structure standard suivante est utilisée :
 
 ```ldif
 dn: dc=cartio,dc=org

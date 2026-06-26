@@ -1,30 +1,30 @@
-# Classe de Objeto: cartioMilitaryPerson
+# Object Class: cartioMilitaryPerson
 
-A classe `cartioMilitaryPerson` estende a identidade tática para o pessoal de forças de defesa e segurança, permitindo o mapeamento de patentes, ramos de serviço e especialidades táticas dentro do diretório.
+The `cartioMilitaryPerson` class extends tactical identity to defense and security forces personnel, allowing the mapping of ranks, branches of service, and tactical specialties within the directory.
 
-*   **OID da Classe**: `1.3.6.1.4.1.61409.600.1.2`
-*   **Superclasse**: `top`
-*   **Tipo**: `AUXILIARY`
+*   **Class OID**: `1.3.6.1.4.1.61409.600.1.2`
+*   **Superclass**: `top`
+*   **Type**: `AUXILIARY`
 
 ---
 
-## Atributos Adicionais Permitidos (MAY)
+## Additional Allowed Attributes (MAY)
 
-### [cartioMilitaryRank](/wiki/atributos#cartiomilitaryrank)
-*   **Descrição**: Posto ou graduação militar (ex: *Tenente, Major, Sargento*).
-*   **Sintaxe**: DirectoryString
-*   **Valência**: Valor Único
+### [cartioMilitaryRank](/en/wiki/atributos#cartiomilitaryrank)
+*   **Description**: Military rank or grade (e.g., *Lieutenant, Major, Sergeant*).
+*   **Syntax**: DirectoryString
+*   **Valence**: Single Value
 
-### [cartioBranchOfService](/wiki/atributos#cartiobranchofservice)
-*   **Descrição**: Ramo da força armada ou segurança pública (ex: *Exército, Marinha, Aeronáutica*).
-*   **Sintaxe**: DirectoryString
-*   **Valência**: Valor Único
+### [cartioBranchOfService](/en/wiki/atributos#cartiobranchofservice)
+*   **Description**: Branch of the armed forces or public security (e.g., *Army, Navy, Air Force*).
+*   **Syntax**: DirectoryString
+*   **Valence**: Single Value
 
-### [cartioMilitarySpecialty](/wiki/atributos#cartiomilitaryspecialty)
-*   **Descrição**: Especialidade Ocupacional Militar ou qualificação (ex: *Comunicações, Infantaria, Saúde*).
-*   **Sintaxe**: DirectoryString
-*   **Valência**: Multi-valorado (o ator pode ter múltiplas qualificações)
+### [cartioMilitarySpecialty](/en/wiki/atributos#cartiomilitaryspecialty)
+*   **Description**: Military Occupational Specialty or qualification (e.g., *Communications, Infantry, Health*).
+*   **Syntax**: DirectoryString
+*   **Valence**: Multi-valued (the actor can have multiple qualifications)
 
-### Outros Atributos:
-*   `cartioServiceNumber`: Número de registro militar / identidade funcional.
-*   `cartioMilitaryUnitDN`: DN de identificação da Organização Militar à qual pertence.
+### Other Attributes:
+*   `cartioServiceNumber`: Military service number / functional identity.
+*   `cartioMilitaryUnitDN`: DN of the Military Organization to which the person belongs.

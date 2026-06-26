@@ -1,33 +1,33 @@
-# Estudos Experimentais e Validação Empírica
+# Études Expérimentales et Validation Empirique
 
-Os testes de validação do Projeto CARTIO foram desenhados sob o ciclo da metodologia *Design Science Research (DSR)*, focando em medir quantitativamente o limite operacional da sincronização sob condições degradadas.
+Les tests de validation du Projet CARTIO ont été conçus selon le cycle de la méthodologie *Design Science Research (DSR)*, en se concentrant sur la mesure quantitative de la limite opérationnelle de la synchronisation dans des conditions dégradées.
 
 ---
 
-## 1. Emulação de Rede com Perda Crítica
-Utilizando a ferramenta do Kernel Linux **NetEm** no laboratório de testes, as transações de dados de identidade e replicação foram submetidas a três níveis progressivos de degradação física:
+## 1. Émulation de Réseau avec Perte Critique
+En utilisant l'outil du noyau Linux **NetEm** dans le laboratoire de test, les transactions de données d'identité et de réplication ont été soumises à trois niveaux progressifs de dégradation physique :
 
-| Cenário | Latência (ms) | Perda de Pacotes (%) | Jitter (ms) | Aplicação |
+| Scénario | Latence (ms) | Perte de Paquets (%) | Gigue (ms) | Application |
 | :--- | :--- | :--- | :--- | :--- |
-| **Nominal (Baseline)** | 20 ms | 0,1% | 5 ms | Conexão ideal |
-| **Degradado** | 250 ms | 15% | 50 ms | Canal de Satélite (GEO) |
-| **Caos** | 1000 ms | 40% | 200 ms | Rádio Tático com Ruído |
+| **Nominal (Baseline)** | 20 ms | 0,1% | 5 ms | Connexion idéale |
+| **Dégradé** | 250 ms | 15% | 50 ms | Canal Satellite (GEO) |
+| **Chaos** | 1000 ms | 40% | 200 ms | Radio Tactique avec Bruit |
 
-Sob o cenário mais crítico (**Caos**), o tráfego baseado em JSON/HTTP falha continuamente devido a timeouts e saturação do BDP. O perfil CARTIO, operando de forma binária com Syncrepl, atinge a convergência de dados de forma estável, provando ser uma alternativa robusta para canais saturados.
-
----
-
-## 2. O Testbed de Validação (Borda & CCO)
-Para representar a aplicação operacional do projeto, foi desenvolvido um protótipo físico integrado:
-
-*   **Dispositivo de Borda**: Um Raspberry Pi 5 acoplado a uma câmera processa localmente imagens da pista utilizando um modelo **YOLOv5** convertido para ONNX. Ele detecta fisicamente anomalias (crateras, alagamentos, barreiras).
-*   **Transmissão Subgiga**: As coordenadas georreferenciadas são transmitidas via rádio **LoRaWAN (Reyax 915 MHz)** em rajadas ultracompactas, totalmente independentes de sinal celular ou internet.
-*   **Painel CCO**: Um servidor de testes recebe o alerta, recalcula rotas de comboios de suprimento logístico usando as bibliotecas **NetworkX e OSMnx** e plota o desvio em tempo real no mapa operacional.
+Dans le scénario le plus critique (**Chaos**), le trafic basé sur JSON/HTTP échoue continuellement en raison des dépassements de temps (timeouts) et de la saturation du BDP. Le profil CARTIO, fonctionnant de manière binaire avec Syncrepl, parvient à une convergence stable des données, prouvant ainsi sa robustesse en tant qu'alternative pour les canaux saturés.
 
 ---
 
-## 3. Reprodutibilidade Científica
-Os dados brutos coletados nos testes, capturas de pacotes de rede (.pcap) e arquivos de log estão indexados no repositório público:
+## 2. Le Banc d'Essai de Validation (Bord & CCO)
+Afin de représenter l'application opérationnelle du projet, un prototype physique intégré a été développé :
 
-*   **Comunidade Zenodo**: [Comunidade CARTIO no Zenodo](https://zenodo.org/communities/cartio)
-*   **Dataset Registrado**: [10.5281/zenodo.18210149](https://doi.org/10.5281/zenodo.18210149)
+*   **Dispositif de Bord (Edge)** : Un Raspberry Pi 5 couplé à une caméra traite localement les images de la route à l'aide d'un modèle **YOLOv5** converti en ONNX. Il détecte physiquement les anomalies (cratères, inondations, barrières).
+*   **Transmission Sub-GHz** : Les coordonnées géoréférencées sont transmises via radio **LoRaWAN (Reyax 915 MHz)** sous forme de rafales ultra-compactes, totalement indépendantes du réseau cellulaire ou d'Internet.
+*   **Panneau CCO (Centre de Contrôle Opérationnel)** : Un serveur de test reçoit l'alerte, recalcule les itinéraires des convois de ravitaillement logistique à l'aide des bibliothèques **NetworkX et OSMnx** et trace la déviation en temps réel sur la carte opérationnelle.
+
+---
+
+## 3. Reproductibilité Scientifique
+Les données brutes collectées lors des tests, les captures de paquets réseau (.pcap) et les fichiers journaux (logs) sont indexés dans le dépôt public :
+
+*   **Communauté Zenodo** : [Communauté CARTIO sur Zenodo](https://zenodo.org/communities/cartio)
+*   **Jeu de Données Enregistré** : [10.5281/zenodo.18210149](https://doi.org/10.5281/zenodo.18210149)

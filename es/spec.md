@@ -1,36 +1,36 @@
-# Especificação Técnica do Protocolo CARTIO
+# Especificación Técnica del Protocolo CARTIO
 
-Esta especificação define o núcleo técnico e protocolar do **CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*). 
+Esta especificación define el núcleo técnico y protocolar del **CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*). 
 
-O protocolo baseia-se na reutilização eficiente do ecossistema LDAPv3 (Lightweight Directory Access Protocol) e na gramática de serialização binária ASN.1 BER.
+El protocolo se basa en la reutilización eficiente del ecosistema LDAPv3 (Lightweight Directory Access Protocol) y en la gramática de serialización binaria ASN.1 BER.
 
 ---
 
 ## 1. Identificadores de Objeto (OIDs)
-O CARTIO está estruturado de forma hierárquica sob um espaço de nomes numérico registrado. A hierarquia segue as diretrizes da recomendação **ITU-T X.660**:
+CARTIO está estructurado de forma jerárquica bajo un espacio de nombres numérico registrado. La jerarquía sigue las directrices de la recomendación **ITU-T X.660**:
 
-*   **Arco Raiz**: `1.3.6.1.4.1.61409` (Enterprise OID de exemplo/registro)
+*   **Arco Raíz**: `1.3.6.1.4.1.61409` (Enterprise OID de ejemplo/registro)
 *   **Módulo CARTIO**: `1.3.6.1.4.1.61409.600`
-    *   `1.3.6.1.4.1.61409.600.1` — **Classes de Objeto (ObjectClasses)**
+    *   `1.3.6.1.4.1.61409.600.1` — **Clases de Objeto (ObjectClasses)**
     *   `1.3.6.1.4.1.61409.600.2` — **Tipos de Atributo (AttributeTypes)**
 
-Esta segmentação limpa garante que cada novo atributo tático adicionado possua um identificador numérico único mundialmente, evitando colisões com outros serviços de diretório.
+Esta segmentación limpia garantiza que cada nuevo atributo táctico añadido posea un identificador numérico único a nivel mundial, evitando colisiones con otros servicios de directorio.
 
 ---
 
-## 2. Serialização Binária: ASN.1 BER
-Em cenários táticos, cada byte transmitido conta. Enquanto o padrão SCIM utiliza o formato textual JSON sobre HTTP, o CARTIO utiliza codificação **ASN.1 BER (Basic Encoding Rules)** sob a norma **ITU-T X.690**:
+## 2. Serialización Binaria: ASN.1 BER
+En escenarios tácticos, cada byte transmitido cuenta. Mientras que el estándar SCIM utiliza el formato textual JSON sobre HTTP, CARTIO utiliza codificación **ASN.1 BER (Basic Encoding Rules)** bajo la norma **ITU-T X.690**:
 
-*   **Formato TLV (Tag-Length-Value)**: Cada dado é encapsulado por tags identificadoras e comprimentos delimitadores de bytes.
-*   **Eficiência Termodinâmica**: A representação do par `"usuario_id": "12345"` consome 21 bytes em UTF-8 textual, enquanto a codificação binária BER do LDAP reduz para apenas **3 bytes** de carga útil.
-*   **Economia de Banda**: Reduz o overhead geral de empacotamento de protocolo de **633% para 21%**, evitando o esgotamento do canal de rádio degradado.
+*   **Formato TLV (Tag-Length-Value)**: Cada dato está encapsulado por etiquetas identificadoras y longitudes delimitadoras de bytes.
+*   **Eficiencia Termodinámica**: La representación del par `"usuario_id": "12345"` consume 21 bytes en UTF-8 textual, mientras que la codificación binaria BER de LDAP la reduce a solo **3 bytes** de carga útil.
+*   **Ahorro de Ancho de Banda**: Reduce la sobrecarga (overhead) general de empaquetado del protocolo del **633% al 21%**, evitando el agotamiento de un canal de radio degradado.
 
 ---
 
-## 3. Replicação Eventual (Syncrepl)
-A sincronização tática do CARTIO em ambientes *Disconnected, Intermittent, Limited* (DIL) apoia-se no motor de sincronização de conteúdo LDAP (**RFC 4533**):
+## 3. Replicación Eventual (Syncrepl)
+La sincronización táctica de CARTIO en entornos *Disconnected, Intermittent, Limited* (DIL) se apoya en el motor de sincronización de contenido LDAP (**RFC 4533**):
 
-1.  **Conexões Persistentes**: Utiliza a persistência da sessão TCP (LDAPS) para evitar handshakes TLS repetitivos em canais de alto RTT (satélite GEO).
-2.  **Cookies de Sincronização**: O nó consumidor transmite um cookie contendo o *Change Sequence Number* (CSN) do seu último estado conhecido.
-3.  **Sincronização Delta**: O provedor avalia o cookie e transmite apenas os registros modificados (deltas), minimizando a sobrecarga.
-4.  **Consistência Eventual**: Permite a desconexão total e garante a convergência automática e resolução de conflitos assim que o sinal (rádio, LoRa, satélite) reestabelecer.
+1.  **Conexiones Persistentes**: Utiliza la persistencia de la sesión TCP (LDAPS) para evitar handshakes TLS repetitivos en canales de alto RTT (satélite GEO).
+2.  **Cookies de Sincronización**: El nodo consumidor transmite una cookie que contiene el *Change Sequence Number* (CSN) de su último estado conocido.
+3.  **Sincronización Delta**: El proveedor evalúa la cookie y transmite únicamente los registros modificados (deltas), minimizando la sobrecarga.
+4.  **Consistencia Eventual**: Permite la desconexión total y garantiza la convergência automática y la resolución de conflictos tan pronto como el canal de comunicación (radio, LoRa, satélite) se restablezca.

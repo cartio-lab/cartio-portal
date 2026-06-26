@@ -1,30 +1,30 @@
-# Classe de Objeto: cartioMilitaryPerson
+# Objektklasse: cartioMilitaryPerson
 
-A classe `cartioMilitaryPerson` estende a identidade tática para o pessoal de forças de defesa e segurança, permitindo o mapeamento de patentes, ramos de serviço e especialidades táticas dentro do diretório.
+Die Klasse `cartioMilitaryPerson` erweitert die taktische Identität für Personal von Verteidigungs- und Sicherheitskräften und ermöglicht die Zuordnung von Dienstgraden, Teilstreitkräften und taktischen Spezialisierungen innerhalb des Verzeichnisses.
 
-*   **OID da Classe**: `1.3.6.1.4.1.61409.600.1.2`
-*   **Superclasse**: `top`
-*   **Tipo**: `AUXILIARY`
+*   **Klassen-OID**: `1.3.6.1.4.1.61409.600.1.2`
+*   **Superklasse**: `top`
+*   **Typ**: `AUXILIARY`
 
 ---
 
-## Atributos Adicionais Permitidos (MAY)
+## Zusätzlich erlaubte Attribute (MAY)
 
-### [cartioMilitaryRank](/wiki/atributos#cartiomilitaryrank)
-*   **Descrição**: Posto ou graduação militar (ex: *Tenente, Major, Sargento*).
-*   **Sintaxe**: DirectoryString
-*   **Valência**: Valor Único
+### [cartioMilitaryRank](/de/wiki/atributos#cartiomilitaryrank)
+*   **Beschreibung**: Dienstgrad oder militärische Graduierung (z. B. *Tenente, Major, Sargento*).
+*   **Syntax**: DirectoryString
+*   **Valenz**: Einzelwert (SINGLE)
 
-### [cartioBranchOfService](/wiki/atributos#cartiobranchofservice)
-*   **Descrição**: Ramo da força armada ou segurança pública (ex: *Exército, Marinha, Aeronáutica*).
-*   **Sintaxe**: DirectoryString
-*   **Valência**: Valor Único
+### [cartioBranchOfService](/de/wiki/atributos#cartiobranchofservice)
+*   **Beschreibung**: Teilstreitkraft oder Bereich der öffentlichen Sicherheit (z. B. *Exército, Marinha, Aeronáutica*).
+*   **Syntax**: DirectoryString
+*   **Valenz**: Einzelwert (SINGLE)
 
-### [cartioMilitarySpecialty](/wiki/atributos#cartiomilitaryspecialty)
-*   **Descrição**: Especialidade Ocupacional Militar ou qualificação (ex: *Comunicações, Infantaria, Saúde*).
-*   **Sintaxe**: DirectoryString
-*   **Valência**: Multi-valorado (o ator pode ter múltiplas qualificações)
+### [cartioMilitarySpecialty](/de/wiki/atributos#cartiomilitaryspecialty)
+*   **Beschreibung**: Militärische Spezialisierung oder Qualifikation (z. B. *Comunicações, Infantaria, Saúde*).
+*   **Syntax**: DirectoryString
+*   **Valenz**: Mehrwertig (MULTI - der Akteur kann mehrere Qualifikationen besitzen)
 
-### Outros Atributos:
-*   `cartioServiceNumber`: Número de registro militar / identidade funcional.
-*   `cartioMilitaryUnitDN`: DN de identificação da Organização Militar à qual pertence.
+### Weitere Attribute:
+*   `cartioServiceNumber`: Militärische Registernummer / Dienstausweisnummer.
+*   `cartioMilitaryUnitDN`: DN zur Identifizierung der Militärischen Organisation, der die Person angehört.

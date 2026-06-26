@@ -1,36 +1,36 @@
-# Classe de Objeto: cartioOrganization
+# Object Class: cartioOrganization
 
-Diferente das classes de pessoas que são auxiliares, a `cartioOrganization` é uma classe **estrutural** (`STRUCTURAL`). Ela mapeia as organizações parceiras no teatro de operações (batalhões, órgãos governamentais, hospitais, agências civis) e seus endpoints de comunicação.
+Unlike the person classes which are auxiliary, `cartioOrganization` is a **structural** (`STRUCTURAL`) class. It maps partner organizations in the theater of operations (battalions, government agencies, hospitals, civil agencies) and their communication endpoints.
 
-*   **OID da Classe**: `1.3.6.1.4.1.61409.600.1.4`
-*   **Superclasse**: `organization`
-*   **Tipo**: `STRUCTURAL`
+*   **Class OID**: `1.3.6.1.4.1.61409.600.1.4`
+*   **Superclass**: `organization`
+*   **Type**: `STRUCTURAL`
 
 ---
 
-## Atributos Obrigatórios (MUST)
+## Required Attributes (MUST)
 
 ### `organizationName`
-*   **Descrição**: Nome oficial da organização participante.
+*   **Description**: Official name of the participating organization.
 
 ---
 
-## Atributos Permitidos (MAY)
+## Allowed Attributes (MAY)
 
 ### `cartioOrganizationType`
-*   **Descrição**: Categoria (ex: *Força Armada, Defesa Civil, Hospital, ONGs*).
+*   **Description**: Category (e.g., *Armed Forces, Civil Defense, Hospital, NGOs*).
 
 ### `cartioPocTechnical`
-*   **Descrição**: DN do Ponto de Contato (PoC) técnico da TI/Comunicações.
+*   **Description**: DN of the technical IT/Communications Point of Contact (PoC).
 
 ### `cartioPocAdministrative`
-*   **Descrição**: DN do PoC administrativo ou operacional.
+*   **Description**: DN of the administrative or operational PoC.
 
 ### `cartioInteroperabilityServiceEndpoint`
-*   **Descrição**: Endereço IP ou URI do nó servidor CARTIO exposto por esta organização.
+*   **Description**: IP address or URI of the CARTIO server node exposed by this organization.
 
 ### `cartioDataProtocolSupported`
-*   **Descrição**: Protocolos suportados para tráfego (ex: *LDAP, Syncrepl, LoRa*).
+*   **Description**: Supported protocols for traffic (e.g., *LDAP, Syncrepl, LoRa*).
 
 ### `cartioGeographicCoverage`
-*   **Descrição**: Polígono de coordenadas geográficas de atuação da organização.
+*   **Description**: Polygon of geographic coordinates of the organization's area of operation.

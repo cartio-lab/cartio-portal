@@ -1,27 +1,27 @@
-# Setores de Emprego e Necessidade Operacional
+# Sectores de Empleo y Necesidad Operacional
 
-O desenvolvimento do Projeto CARTIO atende à necessidade de padronização de dados em três áreas onde o colapso de infraestrutura impede a atuação coordenada de equipes de resposta:
-
----
-
-## 1. Resposta a Desastres Civis (Ajuda Humanitária)
-Em catástrofes naturais de grande magnitude (como enchentes severas, terremotos ou blecautes energéticos prolongados):
-
-*   **Integração Imediata (Dia Zero)**: Permite que agências civis, ONGs e órgãos de saúde comecem a trocar registros de forma interoperável sem precisar reconstruir redes de comunicação física complexas.
-*   **Identificação sob Convenções**: Registro adequado e seguro de equipes médicas e de socorro civil, assegurando sua identificação conforme as regras internacionais.
-*   **Logística Humanitária**: Auxílio na reconfiguração dinâmica de rotas de socorro e identificação de depósitos de suprimentos isolados.
+El desarrollo del Proyecto CARTIO responde a la necesidad de estandarización de datos en tres áreas donde el colapso de la infraestructura impide la actuación coordinada de los equipos de respuesta:
 
 ---
 
-## 2. Apoio à Soberania e Vigilância de Fronteiras
-Nas operações de proteção e auxílio humanitário conduzidas pelo Exército Brasileiro:
+## 1. Respuesta a Desastres Civiles (Ayuda Humanitaria)
+En catástrofes naturales de gran magnitud (como inundaciones severas, terremotos o apagones eléctricos prolongados):
 
-*   **Operações em Áreas Remotas**: Facilita a gestão de identidades e o controle de acessos em bases avançadas ao longo de fronteiras fluviais ou terrestres sem cobertura de satélites comerciais estáveis.
-*   **Comunicações de Rádio**: Sincronização de credenciais de militares e agentes parceiros através de transceptores de rádio VHF/UHF táticos sujeitos a ruído e interferências ambientais.
+*   **Integración Inmediata (Día Cero)**: Permite que agencias civiles, ONG y organizaciones de salud comiencen a intercambiar registros de forma interoperable sin necesidad de reconstruir redes de comunicación física complejas.
+*   **Identificación bajo Convenios**: Registro adecuado y seguro de equipos médicos y de socorro civil, asegurando su identificación conforme a las reglas internacionales.
+*   **Logística Humanitaria**: Auxilio en la reconfiguración dinámica de rutas de socorro e identificación de depósitos de suministros aislados.
 
 ---
 
-## 3. Resiliência de Infraestruturas Críticas
-Garantia de operação em serviços de utilidade pública:
+## 2. Apoyo a la Soberanía y Vigilancia de Fronteras
+En las operaciones de protección y auxilio humanitario conducidas por el Ejército Brasileño:
 
-*   **Controle de Acesso Físico de Emergência**: Funcionamento contínuo de leitores biométricos, catracas e credenciais de segurança em subestações de energia ou reservatórios de água, mesmo que as redes externas estejam inoperantes.
+*   **Operaciones en Áreas Remotas**: Facilita la gestión de identidades y el control de acceso en bases avanzadas a lo largo de fronteras fluviales o terrestres sin cobertura de satélites comerciales estables.
+*   **Comunicaciones por Radio**: Sincronización de credenciales de militares y agentes asociados a través de transceptores de radio VHF/UHF tácticos sujetos a ruido e interferencias ambientales.
+
+---
+
+## 3. Resiliencia de Infraestructuras Críticas
+Garantía de operación en servicios de utilidad pública:
+
+*   **Control de Acceso Físico de Emergencia**: Funcionamiento continuo de lectores biométricos, torniquetes y credenciales de seguridad en subestaciones de energía o reservorios de agua, incluso si las redes externas están inoperativas.

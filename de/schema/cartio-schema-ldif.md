@@ -1,6 +1,6 @@
-# Código LDIF do Schema (cn=config)
+# LDIF-Code des Schemas (cn=config)
 
-Este é o arquivo LDIF pronto para importação dinâmica no OpenLDAP (`cn=config`). Ele define os atributos e as classes de objeto do ecossistema CARTIO:
+Dies ist die LDIF-Datei, die für den dynamischen Import in OpenLDAP (`cn=config`) bereit ist. Sie definiert die Attribute und Objektklassen des CARTIO-Ökosystems:
 
 ```ldif
 # Schema Oficial CARTIO - 2025

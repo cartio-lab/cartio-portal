@@ -1,23 +1,23 @@
-# Manifesto de Sobrevivência dos Dados
+# Manifeste de la Survivabilité des Données
 
-O **Projeto CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*) surge de uma necessidade de engenharia crítica: **prover resiliência informacional em ambientes caracterizados por conexões instáveis ou completamente inexistentes.**
+Le **Projet CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*) découle d'un besoin d'ingénierie critique : **assurer la résilience informationnelle dans des environnements caractérisés par des connexions instables ou complètement inexistantes.**
 
-Nas situações de catástrofes naturais ou conflitos, as redes de telecomunicações de grande velocidade (4G/5G, cabos de fibra óptica e infraestrutura em nuvem) são comumente as primeiras a sofrer interrupção. A dependência de conexões persistentes impede que equipes no campo tomem decisões rápidas sobre quem está autorizado a acessar áreas ou recursos restritos.
-
----
-
-## 1. O Ponto de Ruptura Protocolar
-A indústria de tecnologia da informação concentrou seus esforços em arquiteturas web altamente verbosas (HTTP/JSON/REST). Embora ótimas para redes urbanas abundantes, elas apresentam limites severos em cenários de alta entropia (perda de pacotes e alta latência):
-
-*   **Sobrecarga de Transporte**: Mensagens em texto aberto como JSON adicionam bytes redundantes que saturam os canais de rádio degradados.
-*   **Chattiness (Múltiplos Diálogos)**: O estabelecimento de conexões HTTP clássicas exige transações de handshake sucessivas, o que causa timeouts sob alta perda de dados.
-*   **Colapso Local**: Sem conectividade com a nuvem, as pontas locais tornam-se incapazes de autenticar novos voluntários ou equipes de apoio, paralisando a resposta logística.
+Lors de catastrophes naturelles ou de conflits, les réseaux de télécommunications à haut débit (4G/5G, câbles à fibre optique et infrastructures cloud) sont généralement les premiers à subir des pannes. La dépendance vis-à-vis de connexions persistantes empêche les équipes sur le terrain de prendre des décisions rapides concernant l'autorisation d'accès des personnes aux zones ou ressources restreintes.
 
 ---
 
-## 2. A Engenharia de Sobrevivência
-O CARTIO propõe uma alternativa de padronização viável e eficiente:
+## 1. Le Point de Rupture Protocolaire
+L'industrie des technologies de l'information a concentré ses efforts sur des architectures web extrêmement verbeuses (HTTP/JSON/REST). Bien que parfaitement adaptées aux réseaux urbains abondants, elles présentent de sérieuses limites dans des scénarios à forte entropie (pertes de paquets et latence élevée) :
 
-1.  **Compactação Estrita**: Utilização do protocolo LDAP com codificação binária **ASN.1 BER** para encolher a carga útil transmitida por rádio.
-2.  **Replicação Autônoma**: Mecanismo oportunista de sincronização baseado no padrão **Syncrepl**, permitindo consistência eventual entre bases de dados locais assim que um link é reestabelecido.
-3.  **Compatibilidade Nativa**: Reutilização de um protocolo consolidado há mais de trinta anos e suportado de fábrica pela maioria dos ativos de rede, microcontroladores e sistemas operacionais, eliminando a dependência de middlewares pesados.
+*   **Surcharge de Transport** : Les messages en texte clair tels que JSON ajoutent des octets redondants qui saturent les canaux radio dégradés.
+*   **Chattiness (Multiplicité des Échanges)** : L'établissement de connexions HTTP classiques nécessite des transactions de handshake successives, ce qui entraîne des dépassements de temps (timeouts) sous forte perte de données.
+*   **Effondrement Local** : En l'absence de connectivité avec le cloud, les terminaux locaux deviennent incapables d'authentifier de nouveaux volontaires ou des équipes de soutien, paralysant ainsi la réponse logistique.
+
+---
+
+## 2. L'Ingénierie de la Survivabilité
+CARTIO propose une alternative de standardisation viable et efficace :
+
+1.  **Compression Stricte** : Utilisation du protocole LDAP avec codage binaire **ASN.1 BER** pour réduire la charge utile transmise par radio.
+2.  **Réplication Autonome** : Mécanisme opportuniste de synchronisation basé sur le standard **Syncrepl**, permettant une cohérence éventuelle entre les bases de données locales dès qu'une liaison est rétablie.
+3.  **Compatibilité Native** : Réutilisation d'un protocole consolidé depuis plus de trente ans et supporté nativement par la plupart des actifs réseau, microcontrôleurs et systèmes d'exploitation, éliminant ainsi toute dépendance à l'égard de middlewares lourds.

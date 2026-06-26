@@ -1,21 +1,21 @@
-# Evolução Colaborativa: O Processo de RFC
+# Collaborative Evolution: The RFC Process
 
-O Projeto CARTIO foi concebido sob os preceitos de código aberto e colaboração científica. Para que o schema de identidades possa evoluir sem perder sua consistência semântica e leveza de transporte, as alterações sugeridas pela comunidade seguem um modelo inspirado nos padrões da IETF:
-
----
-
-## 1. O Fluxo de Proposta de RFC
-Toda modificação estrutural — seja a inclusão de um novo atributo para missões de busca e salvamento ou a adequação de sintaxe — passa pelas seguintes fases:
-
-1.  **Draft de Proposta**: O desenvolvedor ou pesquisador propõe a mudança nos arquivos brutos do schema (pasta `schema/` do repositório GitHub) e envia o código para discussão.
-2.  **Validação Experimental**: A alteração é submetida ao laboratório virtual (usando ferramentas de emulação de rede como NetEm) para medir o impacto do novo tamanho de dados sob perdas de até 40%.
-3.  **Revisão do Schema**: O comitê avalia se o novo atributo obedece às restrições de valência (evitando multi-valores desnecessários) e se mantém compatibilidade retroativa.
-4.  **Integração e Wiki**: A especificação é consolidada e a Wiki do Schema é atualizada para documentar o novo padrão aos futuros adotantes.
+The CARTIO Project was designed under the principles of open source and scientific collaboration. In order for the identity schema to evolve without losing its semantic consistency and lightweight transport footprint, changes suggested by the community follow a model inspired by IETF standards:
 
 ---
 
-## 2. Como Contribuir
-Desenvolvedores e pesquisadores interessados em aprimorar as capacidades de resposta a desastres do projeto podem participar diretamente:
-*   Acessando o repositório em [git.cartio.org](http://git.cartio.org).
-*   Abrindo discussões sobre novos atributos necessários em campo.
-*   Enviando Pull Requests para corrigir descrições na wiki ou propor melhorias no schema de banco de dados.
+## 1. The RFC Proposal Flow
+Every structural modification — whether the inclusion of a new attribute for search and rescue missions or syntax adjustments — goes through the following phases:
+
+1.  **Proposal Draft**: The developer or researcher proposes the change in the raw schema files (`schema/` folder of the GitHub repository) and submits the code for discussion.
+2.  **Experimental Validation**: The change is submitted to the virtual laboratory (using network emulation tools like NetEm) to measure the impact of the new data size under packet loss of up to 40%.
+3.  **Schema Review**: The committee evaluates whether the new attribute complies with valence restrictions (avoiding unnecessary multi-values) and maintains backward compatibility.
+4.  **Integration and Wiki**: The specification is consolidated and the Schema Wiki is updated to document the new standard for future adopters.
+
+---
+
+## 2. How to Contribute
+Developers and researchers interested in improving the project's disaster response capabilities can participate directly by:
+*   Accessing the repository at [git.cartio.org](http://git.cartio.org).
+*   Opening discussions about new attributes needed in the field.
+*   Submitting Pull Requests to correct descriptions in the wiki or propose database schema improvements.

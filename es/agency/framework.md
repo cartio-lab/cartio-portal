@@ -1,21 +1,21 @@
-# Evolução Colaborativa: O Processo de RFC
+# Evolución Colaborativa: El Proceso de RFC
 
-O Projeto CARTIO foi concebido sob os preceitos de código aberto e colaboração científica. Para que o schema de identidades possa evoluir sem perder sua consistência semântica e leveza de transporte, as alterações sugeridas pela comunidade seguem um modelo inspirado nos padrões da IETF:
-
----
-
-## 1. O Fluxo de Proposta de RFC
-Toda modificação estrutural — seja a inclusão de um novo atributo para missões de busca e salvamento ou a adequação de sintaxe — passa pelas seguintes fases:
-
-1.  **Draft de Proposta**: O desenvolvedor ou pesquisador propõe a mudança nos arquivos brutos do schema (pasta `schema/` do repositório GitHub) e envia o código para discussão.
-2.  **Validação Experimental**: A alteração é submetida ao laboratório virtual (usando ferramentas de emulação de rede como NetEm) para medir o impacto do novo tamanho de dados sob perdas de até 40%.
-3.  **Revisão do Schema**: O comitê avalia se o novo atributo obedece às restrições de valência (evitando multi-valores desnecessários) e se mantém compatibilidade retroativa.
-4.  **Integração e Wiki**: A especificação é consolidada e a Wiki do Schema é atualizada para documentar o novo padrão aos futuros adotantes.
+El Proyecto CARTIO fue concebido bajo los preceptos de código abierto y colaboración científica. Para que el esquema (*schema*) de identidades pueda evolucionar sin perder su consistencia semántica y ligereza de transporte, las modificaciones sugeridas por la comunidad siguen un modelo inspirado en los estándares de la IETF:
 
 ---
 
-## 2. Como Contribuir
-Desenvolvedores e pesquisadores interessados em aprimorar as capacidades de resposta a desastres do projeto podem participar diretamente:
-*   Acessando o repositório em [git.cartio.org](http://git.cartio.org).
-*   Abrindo discussões sobre novos atributos necessários em campo.
-*   Enviando Pull Requests para corrigir descrições na wiki ou propor melhorias no schema de banco de dados.
+## 1. El Flujo de Propuesta de RFC
+Toda modificación estructural —ya sea la inclusión de un nuevo atributo para misiones de búsqueda y salvamento o la adecuación de sintaxis— pasa por las siguientes fases:
+
+1.  **Borrador (*Draft*) de Propuesta**: El desarrollador o investigador propone el cambio en los archivos brutos del esquema (carpeta `schema/` del repositorio de GitHub) y envía el código para su discusión.
+2.  **Validación Experimental**: El cambio se somete al laboratorio virtual (utilizando herramientas de emulación de red como NetEm) para medir el impacto del nuevo tamaño de datos bajo pérdidas de hasta un 40%.
+3.  **Revisión del Esquema (*Schema*)**: El comité evalúa si el nuevo atributo cumple con las restricciones de valencia (evitando multivalores innecesarios) y si mantiene la compatibilidad retrospectiva (retrocompatibilidad).
+4.  **Integración y Wiki**: La especificación se consolida y la Wiki del Esquema se actualiza para documentar el nuevo estándar para futuros adoptantes.
+
+---
+
+## 2. Cómo Contribuir
+Los desarrolladores e investigadores interesados en mejorar las capacidades de respuesta ante desastres del proyecto pueden participar directamente:
+*   Accediendo al repositorio en [git.cartio.org](http://git.cartio.org).
+*   Abriendo discusiones sobre nuevos atributos necesarios en el terreno.
+*   Enviando Pull Requests para corregir descripciones en la wiki o proponer mejoras en el esquema de base de datos.

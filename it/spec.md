@@ -1,36 +1,36 @@
-# Especificação Técnica do Protocolo CARTIO
+# Specifiche Tecniche del Protocollo CARTIO
 
-Esta especificação define o núcleo técnico e protocolar do **CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*). 
+Questa specifica definisce il nucleo tecnico e protocollare di **CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*). 
 
-O protocolo baseia-se na reutilização eficiente do ecossistema LDAPv3 (Lightweight Directory Access Protocol) e na gramática de serialização binária ASN.1 BER.
-
----
-
-## 1. Identificadores de Objeto (OIDs)
-O CARTIO está estruturado de forma hierárquica sob um espaço de nomes numérico registrado. A hierarquia segue as diretrizes da recomendação **ITU-T X.660**:
-
-*   **Arco Raiz**: `1.3.6.1.4.1.61409` (Enterprise OID de exemplo/registro)
-*   **Módulo CARTIO**: `1.3.6.1.4.1.61409.600`
-    *   `1.3.6.1.4.1.61409.600.1` — **Classes de Objeto (ObjectClasses)**
-    *   `1.3.6.1.4.1.61409.600.2` — **Tipos de Atributo (AttributeTypes)**
-
-Esta segmentação limpa garante que cada novo atributo tático adicionado possua um identificador numérico único mundialmente, evitando colisões com outros serviços de diretório.
+Il protocollo si basa sul riutilizzo efficiente dell'ecosistema LDAPv3 (Lightweight Directory Access Protocol) e sulla grammatica di serializzazione binaria ASN.1 BER.
 
 ---
 
-## 2. Serialização Binária: ASN.1 BER
-Em cenários táticos, cada byte transmitido conta. Enquanto o padrão SCIM utiliza o formato textual JSON sobre HTTP, o CARTIO utiliza codificação **ASN.1 BER (Basic Encoding Rules)** sob a norma **ITU-T X.690**:
+## 1. Identificatori di Oggetto (OID)
+CARTIO è strutturato in modo gerarchico sotto uno spazio dei nomi numerico registrato. La gerarchia segue le linee guida della raccomandazione **ITU-T X.660**:
 
-*   **Formato TLV (Tag-Length-Value)**: Cada dado é encapsulado por tags identificadoras e comprimentos delimitadores de bytes.
-*   **Eficiência Termodinâmica**: A representação do par `"usuario_id": "12345"` consome 21 bytes em UTF-8 textual, enquanto a codificação binária BER do LDAP reduz para apenas **3 bytes** de carga útil.
-*   **Economia de Banda**: Reduz o overhead geral de empacotamento de protocolo de **633% para 21%**, evitando o esgotamento do canal de rádio degradado.
+*   **Arco Radice**: `1.3.6.1.4.1.61409` (Enterprise OID di esempio/registrazione)
+*   **Modulo CARTIO**: `1.3.6.1.4.1.61409.600`
+    *   `1.3.6.1.4.1.61409.600.1` — **Classi di Oggetti (ObjectClasses)**
+    *   `1.3.6.1.4.1.61409.600.2` — **Tipi di Attributo (AttributeTypes)**
+
+Questa segmentazione pulita garantisce che ogni nuovo attributo tattico aggiunto possieda un identificatore numerico univoco a livello mondiale, evitando collisioni con altri servizi di directory.
 
 ---
 
-## 3. Replicação Eventual (Syncrepl)
-A sincronização tática do CARTIO em ambientes *Disconnected, Intermittent, Limited* (DIL) apoia-se no motor de sincronização de conteúdo LDAP (**RFC 4533**):
+## 2. Serializzazione Binaria: ASN.1 BER
+Negli scenari tattici, ogni byte trasmesso conta. Mentre lo standard SCIM utilizza il formato testuale JSON su HTTP, CARTIO utilizza la codifica **ASN.1 BER (Basic Encoding Rules)** ai sensi della norma **ITU-T X.690**:
 
-1.  **Conexões Persistentes**: Utiliza a persistência da sessão TCP (LDAPS) para evitar handshakes TLS repetitivos em canais de alto RTT (satélite GEO).
-2.  **Cookies de Sincronização**: O nó consumidor transmite um cookie contendo o *Change Sequence Number* (CSN) do seu último estado conhecido.
-3.  **Sincronização Delta**: O provedor avalia o cookie e transmite apenas os registros modificados (deltas), minimizando a sobrecarga.
-4.  **Consistência Eventual**: Permite a desconexão total e garante a convergência automática e resolução de conflitos assim que o sinal (rádio, LoRa, satélite) reestabelecer.
+*   **Formato TLV (Tag-Length-Value)**: Ogni dato è incapsulato da tag identificativi e lunghezze delimitatrici di byte.
+*   **Efficienza Termodinamica**: La rappresentazione della coppia `"usuario_id": "12345"` consuma 21 byte in UTF-8 testuale, mentre la codifica binaria BER di LDAP la riduce a soli **3 byte** di payload.
+*   **Risparmio di Banda**: Riduce l'overhead generale di pacchettizzazione del protocollo dal **633% al 21%**, evitando l'esaurimento del canale radio degradado.
+
+---
+
+## 3. Replicazione Eventuale (Syncrepl)
+La sincronizzazione tattica di CARTIO in ambienti *Disconnected, Intermittent, Limited* (DIL) si basa sul motore di sincronizzazione del contenuto LDAP (**RFC 4533**):
+
+1.  **Connessioni Persistenti**: Utilizza la persistenza della sessione TCP (LDAPS) per evitare handshake TLS ripetitivi su canali ad alto RTT (satellite GEO).
+2.  **Cookie di Sincronizzazione**: Il nodo consumatore trasmette un cookie contenente il *Change Sequence Number* (CSN) del suo ultimo stato noto.
+3.  **Sincronizzazione Delta**: Il provider valuta il cookie e trasmette solo i record modificati (delta), riducendo al minimo l'overhead.
+4.  **Consistenza Eventual**: Consente la disconnessione totale e garantisce la convergenza automatica e la risoluzione dei conflitti non appena il segnale (radio, LoRa, satellite) viene ripristinato.

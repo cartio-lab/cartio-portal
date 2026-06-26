@@ -1,6 +1,6 @@
-# Código do Schema Clássico
+# Codice dello Schema Classico
 
-Este é o arquivo de schema no formato tradicional do OpenLDAP (`slapd.conf`). Ele é ideal para sistemas de diretório que carregam configurações de forma estática:
+Questo è il file di schema nel formato tradizionale di OpenLDAP (`slapd.conf`). È ideale per i sistemi di directory che caricano le configurazioni in modo statico:
 
 ```schema
 # Schema Oficial CARTIO - Formato Classico

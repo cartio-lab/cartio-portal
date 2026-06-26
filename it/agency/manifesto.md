@@ -1,23 +1,23 @@
-# Manifesto de Sobrevivência dos Dados
+# Manifesto per la Sopravvivenza dei Dati
 
-O **Projeto CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*) surge de uma necessidade de engenharia crítica: **prover resiliência informacional em ambientes caracterizados por conexões instáveis ou completamente inexistentes.**
+Il **Progetto CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*) nasce da una necessità ingegneristica critica: **fornire resilienza informativa in ambienti caratterizzati da connessioni instabili o completamente inesistenti.**
 
-Nas situações de catástrofes naturais ou conflitos, as redes de telecomunicações de grande velocidade (4G/5G, cabos de fibra óptica e infraestrutura em nuvem) são comumente as primeiras a sofrer interrupção. A dependência de conexões persistentes impede que equipes no campo tomem decisões rápidas sobre quem está autorizado a acessar áreas ou recursos restritos.
-
----
-
-## 1. O Ponto de Ruptura Protocolar
-A indústria de tecnologia da informação concentrou seus esforços em arquiteturas web altamente verbosas (HTTP/JSON/REST). Embora ótimas para redes urbanas abundantes, elas apresentam limites severos em cenários de alta entropia (perda de pacotes e alta latência):
-
-*   **Sobrecarga de Transporte**: Mensagens em texto aberto como JSON adicionam bytes redundantes que saturam os canais de rádio degradados.
-*   **Chattiness (Múltiplos Diálogos)**: O estabelecimento de conexões HTTP clássicas exige transações de handshake sucessivas, o que causa timeouts sob alta perda de dados.
-*   **Colapso Local**: Sem conectividade com a nuvem, as pontas locais tornam-se incapazes de autenticar novos voluntários ou equipes de apoio, paralisando a resposta logística.
+Nelle situazioni di catastrofi naturali o conflitti, le reti di telecomunicazione ad alta velocità (4G/5G, cavi in fibra ottica e infrastrutture cloud) sono comunemente le prime a subire interruzioni. La dipendenza da connessioni persistenti impedisce alle squadre sul campo di prendere decisioni rapide su chi è autorizzato ad accedere ad aree o risorse limitate.
 
 ---
 
-## 2. A Engenharia de Sobrevivência
-O CARTIO propõe uma alternativa de padronização viável e eficiente:
+## 1. Il Punto di Rottura Protocollare
+L'industria dell'information technology ha concentrato i propri sforzi su architetture web altamente verbose (HTTP/JSON/REST). Sebbene ottime per reti urbane abbondanti, esse presentano limiti severi in scenari ad alta entropia (perdita di pacchetti e alta latenza):
 
-1.  **Compactação Estrita**: Utilização do protocolo LDAP com codificação binária **ASN.1 BER** para encolher a carga útil transmitida por rádio.
-2.  **Replicação Autônoma**: Mecanismo oportunista de sincronização baseado no padrão **Syncrepl**, permitindo consistência eventual entre bases de dados locais assim que um link é reestabelecido.
-3.  **Compatibilidade Nativa**: Reutilização de um protocolo consolidado há mais de trinta anos e suportado de fábrica pela maioria dos ativos de rede, microcontroladores e sistemas operacionais, eliminando a dependência de middlewares pesados.
+*   **Sovraccarico di Trasporto**: Messaggi in testo normale come JSON aggiungono byte ridondanti che saturamno i canali radio degradati.
+*   **Chattiness (Dialoghi Multipli)**: L'attivazione di connessioni HTTP classiche richiede transazioni di handshake successive, il che causa timeout in caso di alta perdita di dati.
+*   **Collasso Locale**: Senza connettività cloud, i nodi locali diventano incapaci di autenticare nuovi volontari o squadre di supporto, paralizzando la risposta logistica.
+
+---
+
+## 2. L'Ingegneria della Sopravvivenza
+CARTIO propone un'alternativa di standardizzazione praticabile ed efficiente:
+
+1.  **Compressione Rigorosa**: Utilizzo del protocollo LDAP con codifica binaria **ASN.1 BER** per ridurre il payload trasmesso via radio.
+2.  **Replica Autonoma**: Meccanismo opportunistico di sincronizzazione basato sullo standard **Syncrepl**, che consente la consistenza eventuale tra database locali non appena viene ripristinato un collegamento.
+3.  **Compatibilità Nativa**: Riutilizzo di un protocollo consolidato da oltre trent'anni e supportato di fabbrica dalla maggior parte dei dispositivi di rete, microcontrollori e sistemi operativi, eliminando la dipendenza da middleware pesanti.

@@ -1,38 +1,38 @@
-# Classe de Objeto: cartioPerson
+# Classe di Oggetto: cartioPerson
 
-A classe `cartioPerson` é o núcleo de dados de identidades do protocolo CARTIO. Ela é definida como uma classe **auxiliar** (`AUXILIARY`), permitindo que seus atributos de segurança, nacionais e humanitários sejam acoplados dinamicamente a entradas de diretórios existentes (como classes clássicas `inetOrgPerson` ou `person`).
+La classe `cartioPerson` è il nucleo di dati delle identità del protocollo CARTIO. È definita come una classe **ausiliaria** (`AUXILIARY`), consentendo ai suoi attributi di sicurezza, nazionali e umanitari di essere associati dinamicamente a voci di directory esistenti (como le classi classiche `inetOrgPerson` o `person`).
 
-*   **OID da Classe**: `1.3.6.1.4.1.61409.600.1.1`
+*   **OID della Classe**: `1.3.6.1.4.1.61409.600.1.1`
 *   **Superclasse**: `top`
 *   **Tipo**: `AUXILIARY`
 
 ---
 
-## Atributos Adicionais Permitidos (MAY)
+## Attributi Aggiuntivi Consentiti (MAY)
 
-A classe disponibiliza os seguintes atributos opcionais para o gerenciamento de identidades em teatros de operações e desastres:
+La classe fornisce i seguenti attributi opzionali per la gestione delle identità nei teatri di operazioni e disastri:
 
-### [cartioPersonStatus](/wiki/atributos#cartiopersonstatus)
-*   **Descrição**: O papel geral do ator (ex: *Military, Civil, NGO, Volunteer*).
-*   **Sintaxe**: DirectoryString (Case Insensitive)
-*   **Valência**: Valor Único
+### [cartioPersonStatus](/it/wiki/atributos#cartiopersonstatus)
+*   **Descrizione**: Il ruolo generale dell'attore (es: *Military, Civil, NGO, Volunteer*).
+*   **Sintassi**: DirectoryString (Case Insensitive)
+*   **Valenza**: Valore Singolo
 
-### [cartioNationality](/wiki/atributos#cartionationality)
-*   **Descrição**: Código de nacionalidade ISO 3166-1 alpha-2 (ex: *BR*, *US*).
-*   **Sintaxe**: DirectoryString (Case Insensitive)
-*   **Valência**: Valor Único
+### [cartioNationality](/it/wiki/atributos#cartionationality)
+*   **Descrizione**: Codice di nazionalità ISO 3166-1 alpha-2 (es: *BR*, *US*).
+*   **Sintassi**: DirectoryString (Case Insensitive)
+*   **Valenza**: Valore Singolo
 
-### [cartioSecurityClearance](/wiki/atributos#cartiosecurityclearance)
-*   **Descrição**: Nível de habilitação de segurança tática do ator conforme normas X.841 / ACP 133 (ex: *Confidencial, Secreto*).
-*   **Sintaxe**: DirectoryString
-*   **Valência**: Valor Único
+### [cartioSecurityClearance](/it/wiki/atributos#cartiosecurityclearance)
+*   **Descrizione**: Livello di abilitazione di sicurezza tattica dell'attore in conformità con gli standard X.841 / ACP 133 (es: *Confidenziale, Segreto*).
+*   **Sintassi**: DirectoryString
+*   **Valenza**: Valore Singolo
 
-### [cartioEmergencyContactDN](/wiki/atributos#cartioemergencycontactdn)
-*   **Descrição**: O Nome Distinto (DN) da entrada correspondente ao contato de emergência.
-*   **Sintaxe**: DistinguishedName
-*   **Valência**: Valor Único
+### [cartioEmergencyContactDN](/it/wiki/atributos#cartioemergencycontactdn)
+*   **Descrizione**: Il Distinguished Name (DN) della voce corrispondente al contatto di emergenza.
+*   **Sintassi**: DistinguishedName
+*   **Valenza**: Valore Singolo
 
-### Outros Atributos de Identificação Civil:
-*   `cartioFathersName`: Nome do pai do ator (DirectoryString).
-*   `cartioMothersName`: Nome da mãe do ator (DirectoryString).
-*   `cartioPersonalEmail`: E-mail particular (DirectoryString).
+### Altri Attributi di Identificazione Civile:
+*   `cartioFathersName`: Nome del padre dell'attore (DirectoryString).
+*   `cartioMothersName`: Nome della madre dell'attore (DirectoryString).
+*   `cartioPersonalEmail`: E-mail personale (DirectoryString).

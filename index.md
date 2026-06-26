@@ -25,7 +25,7 @@ features:
     details: Estrutura semântica para operações conjuntas de Dia Zero, alinhada às premissas do conceito NATO Federated Mission Networking (FMN).
   - icon: 🛡️
     title: Engenharia de Sobrevivência
-    details: Persistência mapeada em memória local (LMDB) e sincronização eventual para continuidade das operações sob Guerra Eletrônica ou perda de sinal.
+    details: Persistência mapeada em memória local (LMDB) e sincronização oportunista para sobrevivência operacional sob perda de sinal.
   - icon: ⚖️
     title: Alinhamento Humanitário
     details: Modelagem projetada sob as Convenções de Genebra e diretrizes de proteção de dados sensíveis da ONU/OCHA em crises.
@@ -36,107 +36,123 @@ features:
 <hr class="portal-divider" />
 
 <section class="portal-section">
-  <h2>ESTRUTURA DE INFORMAÇÃO DO PROJETO</h2>
-  <p class="section-lead">O Projeto CARTIO atua no desenvolvimento de padrões de dados voltados à resiliência operacional. A arquitetura de diretórios está dividida em três frentes complementares.</p>
-  
-  <div class="portal-grid">
-    <div class="portal-card">
-      <div class="card-tag">O CONTEXTO</div>
-      <h3>O Projeto & Motivação</h3>
-      <p>A fundamentação teórica de autossuficiência lógica, a necessidade de padronização de identidades e o processo colaborativo de evolução técnica.</p>
-      <a class="card-link" href="/agency/manifesto">Ler Manifesto →</a>
-    </div>
-    
-    <div class="portal-card">
-      <div class="card-tag">A TÉCNICA</div>
-      <h3>Especificação & ASN.1 BER</h3>
-      <p>A modelagem do transporte de dados na camada física: codificação compacta tag-length-value (TLV) e replicação oportunista.</p>
-      <a class="card-link" href="/spec">Ver Especificação →</a>
-    </div>
-    
-    <div class="portal-card">
-      <div class="card-tag">O SCHEMA</div>
-      <h3>Wiki de Atributos & DIT</h3>
-      <p>A documentação de classes e atributos LDAP customizados para catalogar dados de indivíduos, biometrias e meios no campo.</p>
-      <a class="card-link" href="/wiki/cartioPerson">Explorar Wiki →</a>
-    </div>
-  </div>
+<h2>ESTRUTURA DE INFORMAÇÃO DO PROJETO</h2>
+<p class="section-lead">O Projeto CARTIO atua no desenvolvimento de padrões de dados voltados à resiliência operacional. A arquitetura de diretórios está dividida em três frentes complementares.</p>
+
+<div class="portal-grid">
+<div class="portal-card">
+<div class="card-tag">O CONTEXTO</div>
+<h3>O Projeto & Motivação</h3>
+<p>A fundamentação teórica de autossuficiência lógica, a necessidade de padronização de identidades e o processo colaborativo de evolução técnica.</p>
+<a class="card-link" href="/agency/manifesto">Ler Manifesto →</a>
+</div>
+
+<div class="portal-card">
+<div class="card-tag">A TÉCNICA</div>
+<h3>Especificação & ASN.1 BER</h3>
+<p>A modelagem do transporte de dados na camada física: codificação compacta tag-length-value (TLV) e replicação oportunista.</p>
+<a class="card-link" href="/spec">Ver Especificação →</a>
+</div>
+
+<div class="portal-card">
+<div class="card-tag">O SCHEMA</div>
+<h3>Wiki de Atributos & DIT</h3>
+<p>A documentação de classes e atributos LDAP customizados para catalogar dados de indivíduos, biometrias e meios no campo.</p>
+<a class="card-link" href="/wiki/cartioPerson">Explorar Wiki →</a>
+</div>
+</div>
 </section>
 
 <section class="portal-section history-section">
-  <h2>FUNDAÇÃO E CONTEXTO DE DEFESA</h2>
-  <div class="history-grid">
-    <div class="history-text">
-      <h3>O Papel Estratégico do Exército e do IME</h3>
-      <p>O Exército Brasileiro desempenha um papel fundamental no apoio à população em cenários de desastres naturais, na garantia da soberania e na vigilância de fronteiras terrestres. Nessas situações de crise extrema, a perda parcial ou total das comunicações comerciais é uma constante.</p>
-      <p>É nesse limiar de alta entropia que o **Projeto CARTIO** se insere: propondo um padrão aberto, leve e autônomo para garantir o controle de acesso e fluxo de identidades sem depender de conectividade com a nuvem ou backhauls robustos.</p>
-    </div>
-    <div class="history-text">
-      <h3>História e Tradição Científica</h3>
-      <p>A pesquisa do projeto é desenvolvida no **Instituto Militar de Engenharia (IME)**, cuja origem remonta à *Real Academia de Artilharia, Fortificação e Desenho*, fundada em **1792**, configurando a primeira escola de engenharia das Américas e a terceira do mundo.</p>
-      <p>Esta herança de engenharia científica guia o projeto, unindo a computação clássica à sobrevivência de redes para prover soluções que apoiem a tomada de decisão quando os meios convencionais falham.</p>
-    </div>
-  </div>
+<h2>FUNDAÇÃO E CONTEXTO DE DEFESA</h2>
+<div class="history-grid">
+<div class="history-text">
+<h3>O Papel Estratégico do Exército e do IME</h3>
+<p>O Exército Brasileiro desempenha um papel fundamental no apoio à população em cenários de desastres naturais, na garantia da soberania e na vigilância de fronteiras terrestres. Nessas situações de crise extrema, a perda parcial ou total das comunicações comerciais é uma constante.</p>
+<p>É nesse limiar de alta entropia que o **Projeto CARTIO** se insere: propondo um padrão aberto, leve e autônomo para garantir o controle de acesso e fluxo de identidades sem depender de conectividade com a nuvem ou backhauls robustos.</p>
+</div>
+<div class="history-text">
+<h3>História e Tradição Científica</h3>
+<p>A pesquisa do projeto é desenvolvida no **Instituto Militar de Engenharia (IME)**, cuja origem remonta à *Real Academia de Artilharia, Fortificação e Desenho*, fundada em **1792**, configurando a primeira escola de engenharia das Américas e a terceira do mundo.</p>
+<p>Esta herança de engenharia científica guia o projeto, unindo a computação clássica à sobrevivência de redes para prover soluções que apoiem a tomada de decisão quando os meios convencionais falham.</p>
+</div>
+</div>
 </section>
 
 <hr class="portal-divider" />
 
-<!-- Rodapé Longo e Profissional da Agência -->
 <footer class="portal-footer">
-  <div class="footer-grid">
-    <div class="footer-col col-main">
-      <h4>PROJETO CARTIO</h4>
-      <p>Uma alternativa de padronização semântica e resiliência de rede para cenários de desastre. Desenvolvido sob os preceitos da Engenharia de Sobrevivência no Instituto Militar de Engenharia (IME).</p>
-      <p class="institution-history">Origem científica: Real Academia de Artilharia, Fortificação e Desenho (1792).</p>
-    </div>
-    
-    <div class="footer-col">
-      <h4>COMUNICAÇÃO</h4>
-      <ul class="footer-links">
-        <li><strong>Geral:</strong> <a href="mailto:contact@cartio.org">contact@cartio.org</a></li>
-        <li><strong>Defesa:</strong> <a href="mailto:defesa@cartio.org">defesa@cartio.org</a></li>
-        <li><strong>Ajuda Humanitária:</strong> <a href="mailto:humanitario@cartio.org">humanitario@cartio.org</a></li>
-        <li><strong>Suporte Técnico:</strong> <a href="mailto:suporte@cartio.org">suporte@cartio.org</a></li>
-      </ul>
-    </div>
-    
-    <div class="footer-col col-people">
-      <h4>CORPO CIENTÍFICO</h4>
-      <div class="person-info">
-        <p><strong>Wagner Philippe Calazans</strong> (Autor)</p>
-        <span class="links">
-          <a href="http://lattes.cnpq.br/7002908339055296" target="_blank">Lattes</a> | 
-          <a href="https://orcid.org/0009-0004-8259-9914" target="_blank">ORCID</a> | 
-          <a href="http://www.wagnercalazans.com" target="_blank">Website</a>
-        </span>
-        <span class="emails">wagner.calazans@ime.eb.br | contact@wagnercalazans.com</span>
-      </div>
-      
-      <div class="person-info">
-        <p><strong>Ronaldo Moreira Salles</strong> (Orientador)</p>
-        <span class="links">
-          <a href="http://lattes.cnpq.br/3620084512865554" target="_blank">Lattes</a> | 
-          <a href="https://www.scopus.com/authid/detail.uri?authorId=6603483555" target="_blank">Scopus</a> | 
-          <a href="https://orcid.org/0000-0002-3916-5086" target="_blank">ORCID</a>
-        </span>
-        <span class="emails">CIICESI, ESTG, P.Porto | rmo@estg.ipp.pt</span>
-      </div>
-      
-      <div class="person-info">
-        <p><strong>Ricardo Choren Noya</strong> (Orientador)</p>
-        <span class="links">
-          <a href="http://lattes.cnpq.br/1141780402031699" target="_blank">Lattes</a> | 
-          <a href="https://orcid.org/0000-0003-4081-2647" target="_blank">ORCID</a>
-        </span>
-        <span class="emails">IME, Rio de Janeiro, Brasil | choren@ime.eb.br</span>
-      </div>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-    <p>Projeto CARTIO — Instituto Militar de Engenharia (IME) | Rio de Janeiro, Brasil</p>
-    <p class="license">Conteúdo sob licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0).</p>
-  </div>
+<div class="footer-grid">
+<div class="footer-col col-main">
+<h4>PROJETO CARTIO</h4>
+<p>Uma alternativa de padronização semântica e resiliência de rede para cenários de desastre. Desenvolvido sob os preceitos da Engenharia de Sobrevivência no Instituto Militar de Engenharia (IME).</p>
+<p class="institution-history">Origem científica: Real Academia de Artilharia, Fortificação e Desenho (1792).</p>
+<div class="academic-badges" style="margin-top: 20px;">
+<p style="margin-bottom: 8px;"><strong>Indexadores & Registro:</strong></p>
+<p style="font-size: 0.85rem; margin-bottom: 6px;">
+<strong>DOI do Dataset:</strong> 
+<a href="https://doi.org/10.5281/zenodo.18210149" target="_blank" style="color: var(--vp-c-brand); font-family: monospace;">10.5281/zenodo.18210149</a>
+</p>
+<p style="font-size: 0.85rem;">
+<strong>Zenodo Community:</strong> 
+<a href="https://zenodo.org/communities/cartio" target="_blank" style="color: var(--vp-c-brand);">Comunidade CARTIO no Zenodo</a>
+</p>
+</div>
+</div>
+
+<div class="footer-col">
+<h4>COMUNICAÇÃO</h4>
+<ul class="footer-links">
+<li><strong>Geral:</strong> <a href="mailto:contact@cartio.org">contact@cartio.org</a></li>
+<li><strong>Defesa:</strong> <a href="mailto:defesa@cartio.org">defesa@cartio.org</a></li>
+<li><strong>Ajuda Humanitária:</strong> <a href="mailto:humanitario@cartio.org">humanitario@cartio.org</a></li>
+<li><strong>Suporte Técnico:</strong> <a href="mailto:suporte@cartio.org">suporte@cartio.org</a></li>
+</ul>
+<div class="project-git" style="margin-top: 30px;">
+<h4>CÓDIGO FONTE</h4>
+<p style="font-size: 0.85rem;">Repositório Git Oficial:<br/>
+<a href="http://git.cartio.org" target="_blank" style="color: var(--vp-c-brand); font-weight: bold; font-family: monospace;">git.cartio.org</a>
+</p>
+</div>
+</div>
+
+<div class="footer-col col-people">
+<h4>CORPO CIENTÍFICO</h4>
+<div class="person-info">
+<p><strong>Wagner Philippe Calazans</strong> (Autor)</p>
+<span class="links">
+<a href="http://lattes.cnpq.br/7002908339055296" target="_blank">Currículo Lattes</a> | 
+<a href="https://orcid.org/0009-0004-8259-9914" target="_blank">ORCID</a> | 
+<a href="http://www.wagnercalazans.com" target="_blank">Website</a>
+</span>
+<span class="emails">wagner.calazans@ime.eb.br | contact@wagnercalazans.com</span>
+</div>
+
+<div class="person-info">
+<p><strong>Ronaldo Moreira Salles</strong> (Orientador)</p>
+<span class="links">
+<a href="http://lattes.cnpq.br/3620084512865554" target="_blank">Currículo Lattes</a> | 
+<a href="https://www.scopus.com/authid/detail.uri?authorId=6603483555" target="_blank">Scopus</a> | 
+<a href="https://orcid.org/0000-0002-3916-5086" target="_blank">ORCID</a>
+</span>
+<span class="emails">CIICESI, ESTG, P.Porto | rmo@estg.ipp.pt</span>
+</div>
+
+<div class="person-info">
+<p><strong>Ricardo Choren Noya</strong> (Orientador)</p>
+<span class="links">
+<a href="http://lattes.cnpq.br/1141780402031699" target="_blank">Currículo Lattes</a> | 
+<a href="https://orcid.org/0000-0003-4081-2647" target="_blank">ORCID</a>
+</span>
+<span class="emails">IME, Rio de Janeiro, Brasil | choren@ime.eb.br</span>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>Projeto CARTIO — Instituto Militar de Engenharia (IME) | Rio de Janeiro, Brasil</p>
+<p class="license">Conteúdo sob licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0).</p>
+</div>
 </footer>
 
 </div>
@@ -260,8 +276,8 @@ features:
   margin-bottom: 12px;
 }
 .institution-history {
-  font-size: 0.8rem !important;
-  opacity: 0.6 !important;
+  font-size: 0.8rem;
+  opacity: 0.6;
   font-style: italic;
 }
 .footer-links {

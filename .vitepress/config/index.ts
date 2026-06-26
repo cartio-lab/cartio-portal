@@ -17,7 +17,10 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   themeConfig: {
-    logo: '/logo.svg',
+    logo: {
+      light: '/logo-light.svg',
+      dark: '/logo-dark.svg'
+    },
     search: {
       provider: 'local',
       options: {

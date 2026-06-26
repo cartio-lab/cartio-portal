@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "CARTIO Agency & Protocol",
-  description: "Portal Oficial da Autoridade do Protocolo CARTIO - Padrões de Identidade Tática e Resiliência em Redes Degradadas",
+  title: "Projeto CARTIO",
+  description: "Especificação e Wiki do Projeto CARTIO - Padronização de Dados e Gestão de Identidades para Cenários de Desastre",
   lastUpdated: true,
   cleanUrls: true,
+  appearance: true, // Segue o tema do sistema, permitindo alternância manual
   sitemap: {
     hostname: 'https://cartio.org',
   },
@@ -12,7 +13,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#2B7574' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'pt-BR' }],
-    ['meta', { name: 'og:site_name', content: 'CARTIO Protocol Agency' }],
+    ['meta', { name: 'og:site_name', content: 'Projeto CARTIO' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   themeConfig: {
@@ -21,38 +22,38 @@ export default defineConfig({
       provider: 'local',
       options: {
         translations: {
-          button: { buttonText: 'Buscar na Agência...', buttonAriaLabel: 'Buscar' },
+          button: { buttonText: 'Buscar no projeto...', buttonAriaLabel: 'Buscar' },
           modal: { noResultsText: 'Nenhum resultado encontrado', resetButtonTitle: 'Limpar busca' }
         }
       }
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/wagner-calazans/transcartio' },
+      { icon: 'github', link: 'http://git.cartio.org' },
     ],
     nav: [
-      { text: 'A Agência', link: '/agency/manifesto' },
+      { text: 'O Projeto', link: '/agency/manifesto' },
       { text: 'Wiki do Schema', link: '/wiki/cartioPerson' },
       { text: 'Especificação', link: '/spec' },
       { text: 'Experimentos', link: '/experiments' }
     ],
     sidebar: [
       {
-        text: 'A Agência & Governança',
+        text: 'O Projeto & Contexto',
         items: [
-          { text: 'Manifesto de Defesa', link: '/agency/manifesto' },
-          { text: 'Setores de Emprego', link: '/agency/sectors' },
-          { text: 'Governança e Padrões (RFC Tática)', link: '/agency/framework' }
+          { text: 'Manifesto de Validação', link: '/agency/manifesto' },
+          { text: 'Setores de Aplicação', link: '/agency/sectors' },
+          { text: 'Evolução e RFC Tática', link: '/agency/framework' }
         ]
       },
       {
-        text: 'Especificação do Protocolo',
+        text: 'Especificação Técnica',
         items: [
           { text: 'Visão Geral', link: '/spec' },
           { text: 'Conformidade Internacional', link: '/compliance' }
         ]
       },
       {
-        text: 'Wiki do Schema (Central)',
+        text: 'Wiki do Schema (LDAP)',
         items: [
           { text: 'Classe cartioPerson', link: '/wiki/cartioPerson' },
           { text: 'Classe cartioMilitaryPerson', link: '/wiki/cartioMilitaryPerson' },
@@ -62,9 +63,9 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Validação Científica',
+        text: 'Estudos Experimentais',
         items: [
-          { text: 'Experimentos e Benchmarks', link: '/experiments' }
+          { text: 'Cenários e Benchmarks', link: '/experiments' }
         ]
       },
       {
@@ -78,10 +79,6 @@ export default defineConfig({
     docFooter: {
       prev: 'Página anterior',
       next: 'Próxima página',
-    },
-    footer: {
-      message: 'CARTIO - Autoridade de Padronização de Identidades Táticas',
-      copyright: '© 2025 Wagner Calazans / Instituto Militar de Engenharia (IME). Licenciado sob Creative Commons 4.0.',
-    },
+    }
   }
 })

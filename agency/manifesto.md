@@ -1,25 +1,23 @@
-# Manifesto de Defesa e Soberania Tecnológica
+# Manifesto de Sobrevivência dos Dados
 
-O projeto **CARTIO** nasce de um paradoxo crítico e perigoso nas infraestruturas de dados modernas: **a dependência absoluta de tecnologias civis complexas e conexões de alta velocidade em ambientes de alta entropia.**
+O **Projeto CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*) surge de uma necessidade de engenharia crítica: **prover resiliência informacional em ambientes caracterizados por conexões instáveis ou completamente inexistentes.**
 
-Em cenários de conflitos armados, guerra eletrônica ou desastres naturais devastadores, a primeira infraestrutura a sofrer ruptura parcial ou colapso total é a rede de telecomunicações comercial (celulares, fibras ópticas terrestres, servidores em nuvem). 
-
----
-
-## 1. O Paradoxo do Poder Físico e Dependência Lógica
-As forças de segurança e as agências civis gastam bilhões de dólares em poder de combate e salvamento físico, mas dependem de **arquiteturas lógicas frágeis**:
-
-*   **Pilha Web Textual**: A indústria de TI convergiu para padrões web pesados e altamente verbosos (HTTP/JSON/REST). Embora eficientes no dia a dia urbano corporativo, esses protocolos exigem múltiplos handshakes sequenciais (*chattiness* protocolar), grandes volumes de carga útil de rede e conexões sem perdas para manter seu estado.
-*   **Vulnerabilidade à Entropia**: Sob a emulação de falhas graves, as conexões falham, e o tempo de resposta tende ao infinito devido a retransmissões repetitivas de payloads Base64, certificados gigantescos e cabeçalhos desnecessários.
-*   **Dependência Externa**: A centralização de identidades em provedores de nuvem fora do território soberano representa um risco crítico de segurança nacional e vulnerabilidade cibernética de planificação.
+Nas situações de catástrofes naturais ou conflitos, as redes de telecomunicações de grande velocidade (4G/5G, cabos de fibra óptica e infraestrutura em nuvem) são comumente as primeiras a sofrer interrupção. A dependência de conexões persistentes impede que equipes no campo tomem decisões rápidas sobre quem está autorizado a acessar áreas ou recursos restritos.
 
 ---
 
-## 2. A Filosofia da Engenharia de Sobrevivência
-O CARTIO reverte essa tendência com os seguintes princípios de engenharia clássica:
+## 1. O Ponto de Ruptura Protocolar
+A indústria de tecnologia da informação concentrou seus esforços em arquiteturas web altamente verbosas (HTTP/JSON/REST). Embora ótimas para redes urbanas abundantes, elas apresentam limites severos em cenários de alta entropia (perda de pacotes e alta latência):
 
-1.  **O Essencial como Máxima**: Reduzir a carga informacional ao menor denominador comum possível (binário puro ASN.1 BER).
-2.  **Autonomia Local Absoluta**: Cada nó de borda (seja um hospital móvel, uma viatura de patrulha ou um gateway de rádio) possui uma réplica autoritativa local mapeada em memória do diretório de identidades, operando de forma 100% offline se necessário.
-3.  **Simbiose de Sistemas Legados**: Em vez de exigir a substituição de hardware militar legado por novos servidores modernos, o protocolo adota o LDAP, que é nativamente suportado em ativos de rede, roteadores, switches, catracas industriais e microcontroladores há mais de três décadas.
+*   **Sobrecarga de Transporte**: Mensagens em texto aberto como JSON adicionam bytes redundantes que saturam os canais de rádio degradados.
+*   **Chattiness (Múltiplos Diálogos)**: O estabelecimento de conexões HTTP clássicas exige transações de handshake sucessivas, o que causa timeouts sob alta perda de dados.
+*   **Colapso Local**: Sem conectividade com a nuvem, as pontas locais tornam-se incapazes de autenticar novos voluntários ou equipes de apoio, paralisando a resposta logística.
 
-A soberania nacional em momentos de caos depende diretamente da autossuficiência de suas redes lógicas. A missão do CARTIO é garantir que o fluxo de identidades e o controle de acesso continuem operando onde a infraestrutura tradicional termina.
+---
+
+## 2. A Engenharia de Sobrevivência
+O CARTIO propõe uma alternativa de padronização viável e eficiente:
+
+1.  **Compactação Estrita**: Utilização do protocolo LDAP com codificação binária **ASN.1 BER** para encolher a carga útil transmitida por rádio.
+2.  **Replicação Autônoma**: Mecanismo oportunista de sincronização baseado no padrão **Syncrepl**, permitindo consistência eventual entre bases de dados locais assim que um link é reestabelecido.
+3.  **Compatibilidade Nativa**: Reutilização de um protocolo consolidado há mais de trinta anos e suportado de fábrica pela maioria dos ativos de rede, microcontroladores e sistemas operacionais, eliminando a dependência de middlewares pesados.

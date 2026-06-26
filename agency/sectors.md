@@ -1,29 +1,27 @@
-# Setores de Emprego do Protocolo CARTIO
+# Setores de Emprego e Necessidade Operacional
 
-O protocolo CARTIO foi projetado para prover interoperabilidade imediata ("Dia Zero") em três setores principais da sociedade que atuam em cenários degradados:
-
----
-
-## 1. Defesa Nacional e Operações Conjuntas
-Em teatros de operações multinacionais ou interagências (Exército, Marinha, Força Aérea e Forças Policiais):
-
-*   **Sincronização de Cadeia de Comando**: Sincroniza credenciais de segurança e níveis de acesso operacional (`cartioSecurityClearance`) em tempo real entre computadores táticos de diferentes forças.
-*   **Guerra Eletrônica**: Garante a replicação de diretórios críticos sob o ruído de jammers e enlaces de rádio VHF/UHF com alta taxa de perda de pacotes.
-*   **Identificação de Combatentes**: Registro seguro de militares e forças aliadas no campo com biometria compacta pura, sem tráfego de imagens brutas.
+O desenvolvimento do Projeto CARTIO atende à necessidade de padronização de dados em três áreas onde o colapso de infraestrutura impede a atuação coordenada de equipes de resposta:
 
 ---
 
-## 2. Ajuda Humanitária Internacional (Catástrofes)
-Em cenários de resposta a desastres de larga escala coordenados pela ONU/OCHA ou ONGs (Cruz Vermelha, MSF):
+## 1. Resposta a Desastres Civis (Ajuda Humanitária)
+Em catástrofes naturais de grande magnitude (como enchentes severas, terremotos ou blecautes energéticos prolongados):
 
-*   **Registro de Vítimas e Refugiados**: Permite o cadastramento rápido e offline em hospitais de campanha de campanha isolados, garantindo que os dados não colidam com registros de outros abrigos quando a rede reestabelecer.
-*   **Proteção sob Convênios**: Identificação eletrônica clara de médicos, enfermeiros e pessoal de socorro civil, blindando-os juridicamente de acordo com as diretrizes das Convenções de Genebra.
-*   **Logística de Suprimentos**: Mapeamento de rotas e coordenadas geográficas de armazéns e pontos de distribuição em áreas sem sinal de internet comercial.
+*   **Integração Imediata (Dia Zero)**: Permite que agências civis, ONGs e órgãos de saúde comecem a trocar registros de forma interoperável sem precisar reconstruir redes de comunicação física complexas.
+*   **Identificação sob Convenções**: Registro adequado e seguro de equipes médicas e de socorro civil, assegurando sua identificação conforme as regras internacionais.
+*   **Logística Humanitária**: Auxílio na reconfiguração dinâmica de rotas de socorro e identificação de depósitos de suprimentos isolados.
 
 ---
 
-## 3. Defesa Civil e Infraestruturas Críticas Nacionais
-Em incidentes cibernéticos ou blecautes elétricos totais que afetem o território nacional:
+## 2. Apoio à Soberania e Vigilância de Fronteiras
+Nas operações de proteção e auxílio humanitário conduzidas pelo Exército Brasileiro:
 
-*   **Controle de Acesso Físico**: Garantia de que catracas de segurança, usinas hidrelétricas e usinas nucleares continuem validando biometrias e identidades de engenheiros mesmo com as centrais de processamento da nuvem fora do ar.
-*   **Sistemas de Transporte Inteligente**: Roteamento dinâmico automático e persistente para comboios de socorro, integrando detecção de visão de borda e transmissão via rádio VHF/LoRa de baixo custo.
+*   **Operações em Áreas Remotas**: Facilita a gestão de identidades e o controle de acessos em bases avançadas ao longo de fronteiras fluviais ou terrestres sem cobertura de satélites comerciais estáveis.
+*   **Comunicações de Rádio**: Sincronização de credenciais de militares e agentes parceiros através de transceptores de rádio VHF/UHF táticos sujeitos a ruído e interferências ambientais.
+
+---
+
+## 3. Resiliência de Infraestruturas Críticas
+Garantia de operação em serviços de utilidade pública:
+
+*   **Controle de Acesso Físico de Emergência**: Funcionamento contínuo de leitores biométricos, catracas e credenciais de segurança em subestações de energia ou reservatórios de água, mesmo que as redes externas estejam inoperantes.

@@ -3,32 +3,32 @@ layout: home
 
 hero:
   name: CARTIO
-  text: AGÊNCIA DE PADRONIZAÇÃO
-  tagline: Regulando e governando a interoperabilidade de identidades e infraestrutura lógica para teatros de operações críticas e resposta a desastres.
+  text: PROJETO DE PESQUISA
+  tagline: Uma alternativa científica de padronização de dados e gestão de identidades para cenários de desastre e redes degradadas (DIL).
   image:
-    src: /cartio_hero_network.png
-    alt: CARTIO Tactical Data Network Overview
+    src: /cartio_hero_clean.png
+    alt: CARTIO Minimalist Network Schematic
   actions:
     - theme: brand
-      text: Entrar na Agência
+      text: Conhecer o Projeto
       link: /agency/manifesto
     - theme: alt
       text: Wiki do Schema
       link: /wiki/cartioPerson
     - theme: alt
-      text: Especificação Técnica
-      link: /spec
+      text: Código do Schema
+      link: /schema/cartio-schema-ldif
 
 features:
   - icon: 🌍
-    title: Padrão Global de Defesa
-    details: Estrutura tática interoperável projetada para operações conjuntas de coalizão de Dia Zero, baseada no conceito NATO Federated Mission Networking (FMN).
+    title: Proposta de Interoperabilidade
+    details: Estrutura semântica para operações conjuntas de Dia Zero, alinhada às premissas do conceito NATO Federated Mission Networking (FMN).
   - icon: 🛡️
-    title: Resiliência de Borda
-    details: Persistência mapeada em memória local (LMDB) e sincronização oportunista para sobrevivência operacional em ambientes hostis de Guerra Eletrônica.
+    title: Engenharia de Sobrevivência
+    details: Persistência mapeada em memória local (LMDB) e sincronização eventual para continuidade das operações sob Guerra Eletrônica ou perda de sinal.
   - icon: ⚖️
-    title: Direito Humanitário
-    details: Conformidade nativa com as Convenções de Genebra e as diretrizes de proteção de dados sensíveis da ONU/OCHA.
+    title: Alinhamento Humanitário
+    details: Modelagem projetada sob as Convenções de Genebra e diretrizes de proteção de dados sensíveis da ONU/OCHA em crises.
 ---
 
 <div class="custom-portal-layout">
@@ -36,53 +36,108 @@ features:
 <hr class="portal-divider" />
 
 <section class="portal-section">
-  <h2>ESTRUTURA DE INFORMAÇÃO OPERACIONAL</h2>
-  <p class="section-lead">A Agência CARTIO atua na intersecção entre a Engenharia de Sobrevivência, a soberania de Defesa e a resposta a crises de alta entropia. Nossa arquitetura lógica de diretório distribui-se em três divisões críticas.</p>
+  <h2>ESTRUTURA DE INFORMAÇÃO DO PROJETO</h2>
+  <p class="section-lead">O Projeto CARTIO atua no desenvolvimento de padrões de dados voltados à resiliência operacional. A arquitetura de diretórios está dividida em três frentes complementares.</p>
   
   <div class="portal-grid">
     <div class="portal-card">
-      <div class="card-tag">A AGÊNCIA</div>
-      <h3>Governança & Soberania</h3>
-      <p>Mecanismos institucionais de governança, o manifesto de autossuficiência do Estado e a padronização de evolução de schemas via o processo de RFC Tática.</p>
+      <div class="card-tag">O CONTEXTO</div>
+      <h3>O Projeto & Motivação</h3>
+      <p>A fundamentação teórica de autossuficiência lógica, a necessidade de padronização de identidades e o processo colaborativo de evolução técnica.</p>
       <a class="card-link" href="/agency/manifesto">Ler Manifesto →</a>
     </div>
     
     <div class="portal-card">
-      <div class="card-tag">O PROTOCOLO</div>
+      <div class="card-tag">A TÉCNICA</div>
       <h3>Especificação & ASN.1 BER</h3>
-      <p>A física do transporte de dados táticos: codificação binária tag-length-value (TLV) de baixo overhead e o protocolo de sincronização oportunista.</p>
+      <p>A modelagem do transporte de dados na camada física: codificação compacta tag-length-value (TLV) e replicação oportunista.</p>
       <a class="card-link" href="/spec">Ver Especificação →</a>
     </div>
     
     <div class="portal-card">
       <div class="card-tag">O SCHEMA</div>
       <h3>Wiki de Atributos & DIT</h3>
-      <p>O dicionário enciclopédico de classes estruturais e auxiliares que traduzem a identidade, qualificação, biometria e status humanitário de pessoas e meios.</p>
+      <p>A documentação de classes e atributos LDAP customizados para catalogar dados de indivíduos, biometrias e meios no campo.</p>
       <a class="card-link" href="/wiki/cartioPerson">Explorar Wiki →</a>
     </div>
   </div>
 </section>
 
-<section class="portal-section metrics-section">
-  <h2>EVIDÊNCIA EMPÍRICA DE SOBREVIVÊNCIA</h2>
-  <div class="metrics-grid">
-    <div class="metric-item">
-      <span class="metric-val">1/6</span>
-      <span class="metric-lbl">Sobrecarga de Banda</span>
-      <p>Redução de 633% (padrão SCIM/JSON) para 21% de overhead protocolar usando codificação binária pura.</p>
+<section class="portal-section history-section">
+  <h2>FUNDAÇÃO E CONTEXTO DE DEFESA</h2>
+  <div class="history-grid">
+    <div class="history-text">
+      <h3>O Papel Estratégico do Exército e do IME</h3>
+      <p>O Exército Brasileiro desempenha um papel fundamental no apoio à população em cenários de desastres naturais, na garantia da soberania e na vigilância de fronteiras terrestres. Nessas situações de crise extrema, a perda parcial ou total das comunicações comerciais é uma constante.</p>
+      <p>É nesse limiar de alta entropia que o **Projeto CARTIO** se insere: propondo um padrão aberto, leve e autônomo para garantir o controle de acesso e fluxo de identidades sem depender de conectividade com a nuvem ou backhauls robustos.</p>
     </div>
-    <div class="metric-item">
-      <span class="metric-val">100%</span>
-      <span class="metric-lbl">Taxa de Sincronização</span>
-      <p>Sucesso absoluto sob o cenário de caos informacional (40% de perda de pacotes), onde sistemas REST tradicionais colapsam.</p>
-    </div>
-    <div class="metric-item">
-      <span class="metric-val">X.660</span>
-      <span class="metric-lbl">Namespace Federado</span>
-      <p>Estrutura hierárquica baseada em OIDs oficiais, garantindo a unicidade e federação instantânea sem colisões.</p>
+    <div class="history-text">
+      <h3>História e Tradição Científica</h3>
+      <p>A pesquisa do projeto é desenvolvida no **Instituto Militar de Engenharia (IME)**, cuja origem remonta à *Real Academia de Artilharia, Fortificação e Desenho*, fundada em **1792**, configurando a primeira escola de engenharia das Américas e a terceira do mundo.</p>
+      <p>Esta herança de engenharia científica guia o projeto, unindo a computação clássica à sobrevivência de redes para prover soluções que apoiem a tomada de decisão quando os meios convencionais falham.</p>
     </div>
   </div>
 </section>
+
+<hr class="portal-divider" />
+
+<!-- Rodapé Longo e Profissional da Agência -->
+<footer class="portal-footer">
+  <div class="footer-grid">
+    <div class="footer-col col-main">
+      <h4>PROJETO CARTIO</h4>
+      <p>Uma alternativa de padronização semântica e resiliência de rede para cenários de desastre. Desenvolvido sob os preceitos da Engenharia de Sobrevivência no Instituto Militar de Engenharia (IME).</p>
+      <p class="institution-history">Origem científica: Real Academia de Artilharia, Fortificação e Desenho (1792).</p>
+    </div>
+    
+    <div class="footer-col">
+      <h4>COMUNICAÇÃO</h4>
+      <ul class="footer-links">
+        <li><strong>Geral:</strong> <a href="mailto:contact@cartio.org">contact@cartio.org</a></li>
+        <li><strong>Defesa:</strong> <a href="mailto:defesa@cartio.org">defesa@cartio.org</a></li>
+        <li><strong>Ajuda Humanitária:</strong> <a href="mailto:humanitario@cartio.org">humanitario@cartio.org</a></li>
+        <li><strong>Suporte Técnico:</strong> <a href="mailto:suporte@cartio.org">suporte@cartio.org</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col col-people">
+      <h4>CORPO CIENTÍFICO</h4>
+      <div class="person-info">
+        <p><strong>Wagner Philippe Calazans</strong> (Autor)</p>
+        <span class="links">
+          <a href="http://lattes.cnpq.br/7002908339055296" target="_blank">Lattes</a> | 
+          <a href="https://orcid.org/0009-0004-8259-9914" target="_blank">ORCID</a> | 
+          <a href="http://www.wagnercalazans.com" target="_blank">Website</a>
+        </span>
+        <span class="emails">wagner.calazans@ime.eb.br | contact@wagnercalazans.com</span>
+      </div>
+      
+      <div class="person-info">
+        <p><strong>Ronaldo Moreira Salles</strong> (Orientador)</p>
+        <span class="links">
+          <a href="http://lattes.cnpq.br/3620084512865554" target="_blank">Lattes</a> | 
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=6603483555" target="_blank">Scopus</a> | 
+          <a href="https://orcid.org/0000-0002-3916-5086" target="_blank">ORCID</a>
+        </span>
+        <span class="emails">CIICESI, ESTG, P.Porto | rmo@estg.ipp.pt</span>
+      </div>
+      
+      <div class="person-info">
+        <p><strong>Ricardo Choren Noya</strong> (Orientador)</p>
+        <span class="links">
+          <a href="http://lattes.cnpq.br/1141780402031699" target="_blank">Lattes</a> | 
+          <a href="https://orcid.org/0000-0003-4081-2647" target="_blank">ORCID</a>
+        </span>
+        <span class="emails">IME, Rio de Janeiro, Brasil | choren@ime.eb.br</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>Projeto CARTIO — Instituto Militar de Engenharia (IME) | Rio de Janeiro, Brasil</p>
+    <p class="license">Conteúdo sob licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0).</p>
+  </div>
+</footer>
 
 </div>
 
@@ -94,17 +149,18 @@ features:
 }
 .portal-divider {
   border: 0;
-  border-top: 3px solid var(--vp-c-brand);
-  margin: 3rem 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(43, 117, 116, 0.3), transparent);
+  margin: 4rem 0;
 }
 .portal-section {
   margin-bottom: 4rem;
 }
 .section-lead {
   font-size: 1.2rem;
-  opacity: 0.8;
+  opacity: 0.85;
   max-width: 800px;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .portal-grid {
   display: grid;
@@ -147,36 +203,123 @@ features:
   text-decoration: none;
   font-size: 0.95rem;
 }
-.metrics-section {
-  background-color: rgba(43, 117, 116, 0.05);
+
+/* History Section */
+.history-section {
+  background-color: rgba(43, 117, 116, 0.03);
   border-left: 5px solid var(--vp-c-brand);
   padding: 32px 24px;
   border-radius: 4px;
 }
-.metrics-grid {
+.history-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  margin-top: 2rem;
 }
-.metric-item {
-  display: flex;
-  flex-direction: column;
-}
-.metric-val {
-  font-size: 2.5rem;
+.history-text h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
   font-weight: bold;
-  color: var(--vp-c-brand);
-  line-height: 1;
-  margin-bottom: 8px;
 }
-.metric-lbl {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 8px;
+.history-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
 }
-.metric-item p {
+
+/* Footer Styles */
+.portal-footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--vp-c-divider);
+  font-family: var(--vp-font-family-base);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.5fr;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.footer-col h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: var(--vp-c-text-1);
+}
+.footer-col p {
   font-size: 0.9rem;
+  line-height: 1.6;
   opacity: 0.8;
+  margin-bottom: 12px;
+}
+.institution-history {
+  font-size: 0.8rem !important;
+  opacity: 0.6 !important;
+  font-style: italic;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+.footer-links a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.person-info {
+  margin-bottom: 16px;
+  border-bottom: 1px dashed rgba(43, 117, 116, 0.15);
+  padding-bottom: 12px;
+}
+.person-info:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.person-info p {
+  margin: 0 0 4px 0;
+  font-size: 0.9rem;
+}
+.person-info .links {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+.person-info .links a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+.person-info .links a:hover {
+  text-decoration: underline;
+}
+.person-info .emails {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--vp-c-divider);
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+.footer-bottom p {
+  margin: 4px 0;
 }
 </style>

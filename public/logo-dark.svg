@@ -16,16 +16,12 @@
   <polygon points="8,50 50,50 42,58" fill="#d4af37" />
   <polygon points="8,50 42,42 50,50" fill="#aa8439" />
   
-  <!-- Central Imperial Medallion -->
+  <!-- Central Resilient Medallion -->
   <circle cx="50" cy="50" r="18" fill="#2B7574" stroke="#070b0d" stroke-width="2.5" />
   
-  <!-- Stylized Imperial Crown inside the Medallion -->
-  <!-- Crown Peaks -->
-  <path d="M40,55 L36,43 L44,47 L50,38 L56,47 L64,43 L60,55 Z" fill="#ffffff" />
-  <!-- Crown Base Band -->
-  <rect x="39" y="55" width="22" height="3.5" rx="1" fill="#d4af37" />
-  <!-- Jewels on the Base Band -->
-  <circle cx="43" cy="56.7" r="0.7" fill="#ff4d4d" />
-  <circle cx="50" cy="56.7" r="0.7" fill="#53bfd2" />
-  <circle cx="57" cy="56.7" r="0.7" fill="#ff4d4d" />
+  <!-- Stylized Human Identity Icon in the Center (Person Silhouette) -->
+  <!-- Head -->
+  <circle cx="50" cy="41" r="5" fill="#d4af37" />
+  <!-- Shoulders -->
+  <path d="M37,59 C37,51 42,49 50,49 C58,49 63,51 63,59 Z" fill="#d4af37" />
 </svg>

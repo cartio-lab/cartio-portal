@@ -237,5 +237,13 @@
 
 /* Reduzir o espaçamento excessivo inserido pelo layout padrão do VitePress */
 .VPHome {
-  padding-bottom: 24px !important;
+  padding-bottom: 0px !important;
+}
+
+.VPFooter {
+  display: none !important;
+}
+
+.VPContent {
+  padding-bottom: 0px !important;
 }

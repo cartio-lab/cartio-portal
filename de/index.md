@@ -6,7 +6,8 @@ hero:
   text: FORSCHUNGSPROJEKT
   tagline: Eine wissenschaftliche Alternative zur Datenstandardisierung und zum Identitätsmanagement für Katastrophenszenarien und degradierte Netzwerke (DIL).
   image:
-    src: /cartio_hero_clean.png
+    light: /cartio_hero_light.png
+    dark: /cartio_hero_clean.png
     alt: CARTIO Minimalist Network Schematic
   actions:
     - theme: brand

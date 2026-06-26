@@ -6,7 +6,8 @@ hero:
   text: PROJETO DE PESQUISA
   tagline: Uma alternativa científica de padronização de dados e gestão de identidades para cenários de desastre e redes degradadas (DIL).
   image:
-    src: /cartio_hero_clean.png
+    light: /cartio_hero_light.png
+    dark: /cartio_hero_clean.png
     alt: CARTIO Minimalist Network Schematic
   actions:
     - theme: brand

@@ -70,10 +70,10 @@ export default defineConfig({
       description: 'Specification and Wiki of the CARTIO Project - Data Standardization and Identity Management for Disaster Scenarios',
       themeConfig: {
         nav: [
-          { text: 'O Projeto', link: '/en/agency/manifesto' },
-          { text: 'Wiki do Schema', link: '/en/wiki/cartioPerson' },
-          { text: 'Especificação', link: '/en/spec' },
-          { text: 'Experimentos', link: '/en/experiments' }
+          { text: 'The Project', link: '/en/agency/manifesto' },
+          { text: 'Schema Wiki', link: '/en/wiki/cartioPerson' },
+          { text: 'Specification', link: '/en/spec' },
+          { text: 'Experiments', link: '/en/experiments' }
         ],
         sidebar: [
           {

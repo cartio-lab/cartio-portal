@@ -75,11 +75,11 @@ features:
 <div class="history-text">
 <h3>O Papel Estratégico do Exército e do IME</h3>
 <p>O Exército Brasileiro desempenha um papel fundamental no apoio à população em cenários de desastres naturais, na garantia da soberania e na vigilância de fronteiras terrestres. Nessas situações de crise extrema, a perda parcial ou total das comunicações comerciais é uma constante.</p>
-<p>É nesse limiar de alta entropia que o **Projeto CARTIO** se insere: propondo um padrão aberto, leve e autônomo para garantir o controle de acesso e fluxo de identidades sem depender de conectividade com a nuvem ou backhauls robustos.</p>
+<p>É nesse limiar de alta entropia que o <strong>Projeto CARTIO</strong> se insere: propondo um padrão aberto, leve e autônomo para garantir o controle de acesso e fluxo de identidades sem depender de conectividade com a nuvem ou backhauls robustos.</p>
 </div>
 <div class="history-text">
 <h3>História e Tradição Científica</h3>
-<p>A pesquisa do projeto é desenvolvida no **Instituto Militar de Engenharia (IME)**, cuja origem remonta à *Real Academia de Artilharia, Fortificação e Desenho*, fundada em **1792**, configurando a primeira escola de engenharia das Américas e a terceira do mundo.</p>
+<p>A pesquisa do projeto é desenvolvida no <strong>Instituto Militar de Engenharia (IME)</strong>, cuja origem remonta à <em>Real Academia de Artilharia, Fortificação e Desenho</em>, fundada em <strong>1792</strong>, configurando a primeira escola de engenharia das Américas e a terceira do mundo.</p>
 <p>Esta herança de engenharia científica guia o projeto, unindo a computação clássica à sobrevivência de redes para prover soluções que apoiem a tomada de decisão quando os meios convencionais falham.</p>
 </div>
 </div>
@@ -253,7 +253,7 @@ features:
 /* Footer Styles */
 .portal-footer {
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
   border-top: 1px solid var(--vp-c-divider);
   font-family: var(--vp-font-family-base);
 }
@@ -334,8 +334,8 @@ features:
   opacity: 0.6;
 }
 .footer-bottom {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--vp-c-divider);
   text-align: center;
   font-size: 0.8rem;

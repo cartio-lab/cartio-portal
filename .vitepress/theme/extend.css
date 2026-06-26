@@ -234,3 +234,8 @@
   background: linear-gradient(90deg, transparent, rgba(43, 117, 116, 0.4), transparent);
   margin: 4rem 0;
 }
+
+/* Reduzir o espaçamento excessivo inserido pelo layout padrão do VitePress */
+.VPHome {
+  padding-bottom: 24px !important;
+}

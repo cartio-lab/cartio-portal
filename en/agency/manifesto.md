@@ -1,23 +1,23 @@
-# Manifesto de Sobrevivência dos Dados
+# Data Survivability Manifesto
 
-O **Projeto CARTIO** (*Common Auxiliary Registry for Tactical Interoperable Operations*) surge de uma necessidade de engenharia crítica: **prover resiliência informacional em ambientes caracterizados por conexões instáveis ou completamente inexistentes.**
+The **CARTIO Project** (*Common Auxiliary Registry for Tactical Interoperable Operations*) arises from a critical engineering need: **to provide informational resilience in environments characterized by unstable or completely nonexistent connections.**
 
-Nas situações de catástrofes naturais ou conflitos, as redes de telecomunicações de grande velocidade (4G/5G, cabos de fibra óptica e infraestrutura em nuvem) são comumente as primeiras a sofrer interrupção. A dependência de conexões persistentes impede que equipes no campo tomem decisões rápidas sobre quem está autorizado a acessar áreas ou recursos restritos.
-
----
-
-## 1. O Ponto de Ruptura Protocolar
-A indústria de tecnologia da informação concentrou seus esforços em arquiteturas web altamente verbosas (HTTP/JSON/REST). Embora ótimas para redes urbanas abundantes, elas apresentam limites severos em cenários de alta entropia (perda de pacotes e alta latência):
-
-*   **Sobrecarga de Transporte**: Mensagens em texto aberto como JSON adicionam bytes redundantes que saturam os canais de rádio degradados.
-*   **Chattiness (Múltiplos Diálogos)**: O estabelecimento de conexões HTTP clássicas exige transações de handshake sucessivas, o que causa timeouts sob alta perda de dados.
-*   **Colapso Local**: Sem conectividade com a nuvem, as pontas locais tornam-se incapazes de autenticar novos voluntários ou equipes de apoio, paralisando a resposta logística.
+In natural disaster situations or conflicts, high-speed telecommunications networks (4G/5G, fiber optic cables, and cloud infrastructure) are commonly the first to suffer disruption. Dependence on persistent connections prevents field teams from making rapid decisions about who is authorized to access restricted areas or resources.
 
 ---
 
-## 2. A Engenharia de Sobrevivência
-O CARTIO propõe uma alternativa de padronização viável e eficiente:
+## 1. The Protocol Breaking Point
+The information technology industry has concentrated its efforts on highly verbose web architectures (HTTP/JSON/REST). Although excellent for abundant urban networks, they present severe limits in high-entropy scenarios (packet loss and high latency):
 
-1.  **Compactação Estrita**: Utilização do protocolo LDAP com codificação binária **ASN.1 BER** para encolher a carga útil transmitida por rádio.
-2.  **Replicação Autônoma**: Mecanismo oportunista de sincronização baseado no padrão **Syncrepl**, permitindo consistência eventual entre bases de dados locais assim que um link é reestabelecido.
-3.  **Compatibilidade Nativa**: Reutilização de um protocolo consolidado há mais de trinta anos e suportado de fábrica pela maioria dos ativos de rede, microcontroladores e sistemas operacionais, eliminando a dependência de middlewares pesados.
+*   **Transport Overhead**: Open-text messages like JSON add redundant bytes that saturate degraded radio channels.
+*   **Chattiness (Multiple Dialogues)**: Establishing classic HTTP connections requires successive handshake transactions, causing timeouts under high data loss.
+*   **Local Collapse**: Without cloud connectivity, local endpoints become unable to authenticate new volunteers or support teams, paralyzing the logistical response.
+
+---
+
+## 2. Survivability Engineering
+CARTIO proposes a viable and efficient standardization alternative:
+
+1.  **Strict Compression**: Use of the LDAP protocol with **ASN.1 BER** binary encoding to shrink the payload transmitted over radio.
+2.  **Autonomous Replication**: Opportunistic synchronization mechanism based on the **Syncrepl** standard, allowing eventual consistency between local databases as soon as a link is re-established.
+3.  **Native Compatibility**: Reuse of a consolidated protocol defined over thirty years ago and supported out-of-the-box by most network assets, microcontrollers, and operating systems, eliminating dependence on heavy middleware.

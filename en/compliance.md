@@ -1,26 +1,26 @@
-# Conformidade Humanitária e Soberania de Defesa
+# Humanitarian Compliance and Defense Sovereignty
 
-O protocolo CARTIO foi projetado para atuar em cenários onde a vida humana e a segurança das comunicações operam sob condições extremas. Por isso, a especificação atende a normas de direito humanitário e interoperabilidade internacional:
-
----
-
-## 1. Convenções de Genebra (Anexo I ao Protocolo I)
-O Anexo I ao Protocolo I das Convenções de Genebra rege os meios de identificação de pessoal de saúde e de defesa civil em conflitos armados. 
-
-O CARTIO modela formalmente a salvaguarda de pessoal em seu Schema através de atributos específicos:
-*   `cartioGenevaRole`: Define a classificação protegida do profissional (ex: *MedicalPersonnel, CivilDefence*).
-*   `cartioGenevaStatus`: Status do direito internacional humanitário que garante a imunidade (ex: *Protected*).
+The CARTIO protocol was designed to operate in scenarios where human life and the security of communications operate under extreme conditions. For this reason, the specification complies with humanitarian law standards and international interoperability guidelines:
 
 ---
 
-## 2. Diretrizes da ONU / OCHA
-O Escritório das Nações Unidas para a Coordenação de Assuntos Humanitários (**OCHA**) estabelece diretrizes rígidas sobre a governança de dados em crises para proteger a privacidade de vítimas e voluntários. 
+## 1. Geneva Conventions (Annex I to Protocol I)
+Annex I to Protocol I of the Geneva Conventions governs the means of identification for medical and civil defense personnel in armed conflicts.
 
-O CARTIO integra:
-*   **Controle de Acesso Granular (ACLs)**: Bloqueio estrito de leitura de metadados biométricos e níveis de liberação por meio de ACLs dinâmicas configuradas em Run-Time no daemon OpenLDAP.
-*   **Soberania Tecnológica**: Uso de padrões abertos não proprietários, garantindo a autossuficiência do Estado sem dependência lógica de provedores de nuvem estrangeiros.
+CARTIO formally models the safeguarding of personnel in its Schema through specific attributes:
+*   `cartioGenevaRole`: Defines the protected classification of the professional (e.g., *MedicalPersonnel, CivilDefence*).
+*   `cartioGenevaStatus`: International humanitarian law status that guarantees immunity (e.g., *Protected*).
+
+---
+
+## 2. UN / OCHA Guidelines
+The United Nations Office for the Coordination of Humanitarian Affairs (**OCHA**) establishes strict guidelines on data governance in crises to protect the privacy of victims and volunteers.
+
+CARTIO integrates:
+*   **Granular Access Control (ACLs)**: Strict read-blocking of biometric metadata and clearance levels through dynamic ACLs configured at Run-Time in the OpenLDAP daemon.
+*   **Technological Sovereignty**: Use of non-proprietary open standards, guaranteeing State self-sufficiency without logical dependence on foreign cloud providers.
 
 ---
 
 ## 3. NATO FMN (Federated Mission Networking)
-O FMN é a especificação da OTAN para permitir a federação imediata de redes em operações de coalizão multinacionais. O CARTIO implementa a federação no "Dia Zero" através da estrutura hierárquica do LDAP e cookies Syncrepl, permitindo a sincronização em tempo real de identidades entre forças distintas.
+FMN is the NATO specification that allows the immediate federation of networks in multinational coalition operations. CARTIO implements federation on "Day Zero" through LDAP's hierarchical structure and Syncrepl cookies, enabling real-time synchronization of identities between distinct forces.

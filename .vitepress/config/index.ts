@@ -58,12 +58,16 @@ export default defineConfig({
   locales: {
     root: {
       label: 'Português',
-      lang: 'pt-BR'
+      lang: 'pt-BR',
+      title: 'Projeto CARTIO',
+      description: 'Especificação e Wiki do Projeto CARTIO - Padronização de Dados e Gestão de Identidades para Cenários de Desastre'
     },
     en: {
       label: 'English',
       lang: 'en-US',
       link: '/en/',
+      title: 'CARTIO Project',
+      description: 'Specification and Wiki of the CARTIO Project - Data Standardization and Identity Management for Disaster Scenarios',
       themeConfig: {
         nav: [
           { text: 'O Projeto', link: '/en/agency/manifesto' },
@@ -121,6 +125,8 @@ export default defineConfig({
       label: 'Español',
       lang: 'es-ES',
       link: '/es/',
+      title: 'Proyecto CARTIO',
+      description: 'Especificación y Wiki del Proyecto CARTIO - Estandarización de Datos y Gestión de Identidades para Escenarios de Desastre',
       themeConfig: {
         nav: [
           { text: 'El Proyecto', link: '/es/agency/manifesto' },
@@ -178,6 +184,8 @@ export default defineConfig({
       label: 'Italiano',
       lang: 'it-IT',
       link: '/it/',
+      title: 'Progetto CARTIO',
+      description: 'Specifica e Wiki del Progetto CARTIO - Standardizzazione dei Dati e Gestione delle Identità per Scenari di Disastro',
       themeConfig: {
         nav: [
           { text: 'Il Progetto', link: '/it/agency/manifesto' },
@@ -235,6 +243,8 @@ export default defineConfig({
       label: 'Français',
       lang: 'fr-FR',
       link: '/fr/',
+      title: 'Projet CARTIO',
+      description: 'Spécification et Wiki du Projet CARTIO - Standardisation des Données et Gestion des Identités pour les Scénarios de Catastrophe',
       themeConfig: {
         nav: [
           { text: 'Le Projet', link: '/fr/agency/manifesto' },
@@ -292,6 +302,8 @@ export default defineConfig({
       label: 'Deutsch',
       lang: 'de-DE',
       link: '/de/',
+      title: 'CARTIO-Projekt',
+      description: 'Spezifikation und Wiki des CARTIO-Projekts - Datenstandardisierung und Identitätsmanagement für Katastrophenszenarien',
       themeConfig: {
         nav: [
           { text: 'Das Projekt', link: '/de/agency/manifesto' },

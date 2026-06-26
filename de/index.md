@@ -4,7 +4,7 @@ layout: home
 hero:
   name: CARTIO
   text: FORSCHUNGSPROJEKT
-  tagline: Eine wissenschaftliche Alternative zur Datenstandardisierung und zum Identitätsmanagement für Katastrophenszenarien und degradierte Netzwerke (DIL).
+  tagline: Gemeinsames Hilfsregister für taktisch interoperable Operationen. Eine wissenschaftliche Alternative zur Datenstandardisierung und zum Identitätsmanagement für Katastrophenszenarien und degradierte Netzwerke (DIL).
   image:
     light: /cartio_hero_light.png
     dark: /cartio_hero_clean.png

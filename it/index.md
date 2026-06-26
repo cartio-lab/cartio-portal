@@ -4,7 +4,7 @@ layout: home
 hero:
   name: CARTIO
   text: PROGETTO DI RICERCA
-  tagline: Un'alternativa scientifica di standardizzazione dei dati e gestione delle identità per scenari di disastro e reti degradate (DIL).
+  tagline: Registro Ausiliario Comune per Operazioni Tattiche Interoperabili. Un'alternativa scientifica di standardizzazione dei dati e gestione delle identità per scenari di disastro e reti degradate (DIL).
   image:
     light: /cartio_hero_light.png
     dark: /cartio_hero_clean.png

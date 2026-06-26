@@ -4,7 +4,7 @@ layout: home
 hero:
   name: CARTIO
   text: PROJETO DE PESQUISA
-  tagline: Uma alternativa científica de padronização de dados e gestão de identidades para cenários de desastre e redes degradadas (DIL).
+  tagline: Registro Auxiliar Comum para Operações Táticas Interoperáveis. Uma alternativa científica de padronização de dados e gestão de identidades para cenários de desastre e redes degradadas (DIL).
   image:
     light: /cartio_hero_light.png
     dark: /cartio_hero_clean.png
